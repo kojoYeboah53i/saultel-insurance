@@ -6,7 +6,7 @@ use App\Models\healthFacilities;
 // use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\ToModel;
 
-class healthFacilityImport implements ToModal
+class healthFacilityImport implements ToModel
 {
 
 

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Excel\ExportController;
+use App\Http\Controllers\Excel\ImportController;
 
 
 /*
@@ -1380,3 +1381,4 @@ Route::get('excel', function() {
 })->name('excel');
 
 Route::get('users/export/', [ExportController::class, 'export'])->name('users.export');
+Route::post('users/import/', [ImportController::class, 'import'])->name('users.import');

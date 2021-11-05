@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Excel;
-
-use App\Models\healthFacilities;
 use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Concerns\ToModel;
+use App\Exports\healthFacilityImport; 
+use Maatwebsite\Excel\Facades\Excel;
 
 class ImportController extends Controller
 {
@@ -13,8 +13,8 @@ class ImportController extends Controller
 
     public function import() 
     {
-        Excel::import(new UsersImport, 'users.xlsx');
+        Excel::import(new healthFacilityImport, request()->file('healthFacilitiesGPS'));// 'healthFacilitiesGPS.xlsx');
         
-        return redirect('/')->with('success', 'All good!');
+        return view('pages.partner.excel')->with('success', 'All good!');
     }
 }
