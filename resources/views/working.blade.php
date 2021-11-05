@@ -2,7 +2,29 @@
 
 @section('content')
 
-    its working
+    <div class="layout-px-spacing">
+
+        <div class="row layout-top-spacing" style="display:flex: justify-content:space-between">
+
+            <div class=" col-sm" style="padding: 40px; text-align: center; margin:auto">
+                <form class="form" action="{{route('users.import')}}" method="post" enctype="multipart/form-data">
+                    @csrf 
+                <label for="">upload excel file</label>
+                <input type="file" class="form-control-file" name="healthFacilitiesGPS" id="" placeholder="" aria-describedby="fileHelpId">
+                <button id="upload" class="btn btn-warning" type="submit">Upload</button>
+
+            </form>
+         </div>
+            <div class="col-sm  " style="display:flex; flex-direction:column; padding: 40px; text-align: center; margin:auto">
+                <label for="">Export users as excel</label>
+                <a href="{{route('users.export')}}" class="btn  btn-success">Export</a>
+            </div>
+
+        </div>
+    </div>
+
+  
+   
     
     @endsection
 
