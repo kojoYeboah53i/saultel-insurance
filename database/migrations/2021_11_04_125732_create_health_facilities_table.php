@@ -23,11 +23,11 @@ class CreateHealthFacilitiesTable extends Migration
             $table->integer('phone')->nullable();
             $table->string('image')->nullable();
             $table->string('description')->nullable();
-            $table->string('facility_type');
-            $table->string('town');
-            $table->string('ownership');
-            $table->string('long');
-            $table->string('lat');
+            $table->string('facility_type')->nullable();
+            $table->string('town')->nullable();
+            $table->string('ownership')->nullable();
+            $table->string('long')->nullable();
+            $table->string('lat')->nullable();
             //foreign key
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             // $table->foreign('user_id')->('id')->on('users');
