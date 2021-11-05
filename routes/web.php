@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Excel\ExportController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -1365,3 +1367,16 @@ Route::get('serviceProvider', function() {
     ];
     return view('pages.partner.form_input_group_basic')->with($data);
 })->name('serviceProvider');
+
+Route::get('excel', function() {
+    $data = [
+        'category_name' => 'excel',
+        'page_name' => 'Excel',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+
+    ];
+    return view('pages.partner.excel')->with($data);
+})->name('excel');
+
+Route::get('users/export/', [ExportController::class, 'export'])->name('users.export');
