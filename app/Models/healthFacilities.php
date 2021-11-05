@@ -15,7 +15,7 @@ class healthFacilities extends Model
    ['region', 'district', 'phone',
     'email', 'facility_type', 'facility_name',
      'lat',
-     'long', 'description', 'image', 'user_id'];
+     'long', 'ownership', 'description', 'town', 'image', 'user_id'];
 
      public function role(){
         return $this->belongsToMany(Role::class);

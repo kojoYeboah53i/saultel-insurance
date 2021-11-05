@@ -8,7 +8,30 @@ use Maatwebsite\Excel\Concerns\ToModel;
 
 class healthFacilityImport implements ToModal
 {
-    /**
+
+
+       /**
+     * @param array $row
+     *
+     * @return healthFacilities|null
+     */
+    public function model(array $row)
+    {
+       // return healthFacilities::all();
+       return new healthFacilities([
+        'region'     => $row[0],
+        'district'    => $row[1], 
+        'facility_name'    => $row[2], 
+        'facility_type'    => $row[3], 
+        'town'    => $row[4], 
+        'ownership'    => $row[5], 
+        'lat'    => $row[6], 
+        'long'    => $row[7], 
+     ]);
+    }
+
+ 
+        /**
     * @return \Illuminate\Database\Eloquent\Collection
     */
    /*   public function model(array $row)
@@ -28,26 +51,5 @@ class healthFacilityImport implements ToModal
         ]);
     }
 }*/
-
-       /**
-     * @param array $row
-     *
-     * @return healthFacilities|null
-     */
-    public function model(array $row)
-    {
-       // return healthFacilities::all();
-       return new User([
-        'region'     => $row[0],
-        'district'    => $row[1], 
-        'district'    => $row[1], 
-        'district'    => $row[1], 
-        'district'    => $row[1], 
-        'district'    => $row[1], 
-        'district'    => $row[1], 
-     ]);
-    }
-
- 
 
 }
