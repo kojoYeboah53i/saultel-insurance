@@ -1367,7 +1367,19 @@ Route::get('serviceProvider', function() {
 
     ];
     return view('pages.partner.form_input_group_basic')->with($data);
+
 })->name('serviceProvider');
+
+Route::get('work', function() {
+    $data = [
+        'category_name' => 'work',
+        'page_name' => 'work',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+
+    ];
+    return view('working')->with($data);
+})->name('work');
 
 Route::get('excel', function() {
     $data = [
