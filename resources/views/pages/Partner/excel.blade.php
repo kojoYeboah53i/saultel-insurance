@@ -20,7 +20,7 @@
          {{-- middle button --}}
          <div class="col-sm" style="display: flex; flex-direction:column; padding: 40px; justify-content:center; align-items:center; margin:auto">
              <label for="">view Health facilitices</label>
-                <a href="{{route('service.provider')}}"  class="btn btn-danger" rel="noopener noreferrer">View</a>
+                <a href="{{route('serviceProvider')}}"  class="btn btn-danger" rel="noopener noreferrer">View</a>
          </div>
                 
             <div class="col-sm  " style="display:flex; flex-direction:column; padding: 40px; text-align: center; margin:auto">

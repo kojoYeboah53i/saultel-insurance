@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Excel\ExportController;
 use App\Http\Controllers\Excel\ImportController;
+use App\Http\Controllers\ServiceProvider\FacilitiesController;
 use App\Http\Controllers\ServiceProvider\healthFacility;
 
 /*
@@ -1396,4 +1397,6 @@ Route::get('users/export/', [ExportController::class, 'export'])->name('users.ex
 Route::post('users/import/', [ImportController::class, 'import'])->name('users.import');
 
 Route::get('service/providers/', 
-[healthFacility::class, 'index'])->name('service.provider');
+[FacilitiesController::class, 'getServiceProviders'])->name('serviceProvider');
+
+

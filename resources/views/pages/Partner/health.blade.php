@@ -27,13 +27,14 @@
                         <td>{{$facility->long}}</td>
                         <td>{{$facility->created_at}}</td>
                         <td>
-                            {{-- <a href="{{route('users.edit', $facility->id)}}" class="btn btn-primary">Edit</a> --}}
-                            {{-- <a href="{{route('users.delete', $facility->id)}}" class="btn btn-danger">Delete</a> --}}
+                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        {{ $facilities->links() }}
         @endif
 
 </div>
