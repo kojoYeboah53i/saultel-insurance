@@ -14,7 +14,7 @@ class healthFacilities extends Model
    protected $fillable = 
    ['region', 'district', 'phone',
     'email', 'facility_type', 'facility_name',
-     'lat',
+     'lat', 'created_at', 'updated_at',
      'long', 'ownership', 'description', 'town', 'image', 'user_id'];
 
      public function role(){

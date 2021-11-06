@@ -15,12 +15,22 @@
 
             </form>
          </div>
+         
+         
+         {{-- middle button --}}
+         <div class="col-sm" style="display: flex; flex-direction:column; padding: 40px; justify-content:center; align-items:center; margin:auto">
+             <label for="">view Health facilitices</label>
+                <a href="{{route('service.provider')}}"  class="btn btn-danger" rel="noopener noreferrer">View</a>
+         </div>
+                
             <div class="col-sm  " style="display:flex; flex-direction:column; padding: 40px; text-align: center; margin:auto">
                 <label for="">Export users as excel</label>
                 <a href="{{route('users.export')}}" class="btn  btn-success">Export</a>
             </div>
 
         </div>
+
+     
     </div>
 
   
