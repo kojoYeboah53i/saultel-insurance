@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use Illuminate\Http\Response;
 // controllers
+use App\Http\Controllers\ServiceProvider\FacilitiesController;
 use App\Http\Controllers\Partner\AddController;
 
 /*
@@ -31,3 +32,7 @@ Route::get('/user', function () {
 })->name('getCurrentUser');
 
 Route::post('/addingPartner', [AddController::class, 'store'])->name('addingPartner');
+
+//route facility.edit
+Route::post('/facility/{id}', [FacilitiesController::class, 'update'])->name('facility.edit');//facility.edit
+Route::post('/facility/{id}', [FacilitiesController::class, 'delete'])->name('facility.destroy');

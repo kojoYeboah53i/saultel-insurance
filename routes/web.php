@@ -1400,3 +1400,6 @@ Route::get('service/providers/',
 [FacilitiesController::class, 'getServiceProviders'])->name('serviceProvider');
 
 
+//route facility.edit
+Route::post('/facility/{id}', [FacilitiesController::class, 'update'])->name('facility.edit');//facility.edit
+Route::post('/facility/delete{id}', [FacilitiesController::class, 'delete'])->name('facility.destroy');

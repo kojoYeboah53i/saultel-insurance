@@ -29,6 +29,21 @@ class FacilitiesController extends Controller
         ];
         return view('pages.partner.health', compact('facilities'))->with($data);
     }
+
+    // edit facility
+    public function update($id)
+    {
+        $facility = Health::find($id);
+        return view('service_provider.facilities.edit', compact('facility'));
+    }
+
+    //delete facility
+    public function delete($id)
+    {
+        $facility = Health::find($id);
+        $facility->delete();
+        return redirect()->back();
+    }
         
 
 
