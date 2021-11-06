@@ -13,7 +13,7 @@ class FacilitiesController extends Controller
     {
         $facilities = healthFacilities::where('id', '>', 0,)
         // ->orderBy('id', 'desc')
-        ->get();
+        ->get()->paginate(25);
         $data = [
             'category_name' => 'health facilities',
             'page_name' => 'health facilities',

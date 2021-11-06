@@ -4,7 +4,8 @@ namespace App\Http\Controllers\ServiceProvider;
 
 use App\Http\Controllers\Controller;
 use App\Models\healthFacilities;
-use App\Http\Resources\healthResource;
+use App\Models\User;
+// use App\Http\Resources\healthResource;
 use Illuminate\Http\Request;
 
 class HealthFacility extends Controller
@@ -16,16 +17,18 @@ class HealthFacility extends Controller
      */
     public function index()
     {
-        $data = new healthResource(healthFacilities::paginate(4));
-        
-        $page = [
+        $facilities = healthFacilities::all();//->paginate(24);//where('id', '>', 0,)
+        // ->orderBy('id', 'desc')
+       // ->get();//->paginate(25);
+        $users = User::all();
+        $data = [
             'category_name' => 'health facilities',
             'page_name' => 'health facilities',
             'has_scrollspy' => 0,
             'scrollspy_offset' => '',
     
         ];
-        return view('pages.partner.health', compact($data))->with($page);
+        return view('pages.partner.health', compact('facilities', 'users'))->with($data);
     }
 
     /**

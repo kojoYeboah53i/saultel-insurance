@@ -2,11 +2,9 @@
 
 @section('content')
 <div class="container" style="width: 80%; height:auto; text-align: center; margin:auto;">
-    @if(1 > 0)
-        if statment is valid
-    @endif
 
-    @if(!empty($data[0]))
+
+    @if(!empty($facilities[0]))
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -20,7 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-             @foreach( $data as $key=>$facility) ) 
+             @foreach( $facilities as $key=>$facility) 
                     <tr>
                         {{-- <td>{{$facility->id}}</td> --}}
                         <td>{{$facility->facility_name}}</td>
