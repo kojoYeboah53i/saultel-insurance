@@ -6,7 +6,7 @@
         if statment is valid
     @endif
 
-    @if($data->count() > 0)
+    @if(!empty($data[0]))
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -20,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($data as $facility)
+             @foreach( $data as $key=>$facility) ) 
                     <tr>
                         {{-- <td>{{$facility->id}}</td> --}}
                         <td>{{$facility->facility_name}}</td>

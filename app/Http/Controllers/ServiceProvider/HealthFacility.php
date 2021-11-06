@@ -16,11 +16,16 @@ class HealthFacility extends Controller
      */
     public function index()
     {
-        // $data = new healthResource(healthFacilities::paginate(4));
-        dd(healthFacilities::findOrFail(1));
-        // $data = healthFacilities::paginate(4);
-        // dd($data);
-        // return view('pages.partner.health')->with('data', $data);
+        $data = new healthResource(healthFacilities::paginate(4));
+        
+        $page = [
+            'category_name' => 'health facilities',
+            'page_name' => 'health facilities',
+            'has_scrollspy' => 0,
+            'scrollspy_offset' => '',
+    
+        ];
+        return view('pages.partner.health', compact($data))->with($page);
     }
 
     /**
