@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class healthFacilities extends Model
 {
     use HasFactory;
-   protected $table = 'healthFacilities';
+  // protected $table = 'healthFacilities';  //health_facilities
    protected $primaryKey = 'id';
 
    protected $fillable = 
    ['region', 'district', 'phone',
     'email', 'facility_type', 'facility_name',
-     'lat',
+     'lat', 'created_at', 'updated_at',
      'long', 'ownership', 'description', 'town', 'image', 'user_id'];
 
      public function role(){

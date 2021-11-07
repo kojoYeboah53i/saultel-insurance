@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHealthFacilitiesTable extends Migration
+class CreateHealthsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateHealthFacilitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('health_facilities', function (Blueprint $table) {
+        Schema::create('healths', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id')->nullable();
             $table->string('region');
@@ -28,10 +28,7 @@ class CreateHealthFacilitiesTable extends Migration
             $table->string('ownership')->nullable();
             $table->string('long')->nullable();
             $table->string('lat')->nullable();
-            //foreign key
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            // $table->foreign('user_id')->('id')->on('users');
-
             $table->timestamps();
         });
     }
@@ -43,6 +40,6 @@ class CreateHealthFacilitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('health_facilities');
+        Schema::dropIfExists('healths');
     }
 }

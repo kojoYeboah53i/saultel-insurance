@@ -1,0 +1,50 @@
+            public static function paginate(Collection $collection, $pageSize){
+                $page = Paginator::resolveCurrentPage('page');
+                $total = $collection->count();
+
+                return self::paginator($collection->forPage($page, $pageSize), $total, $pageSize, $page, [
+                    'path' => Paginator::resolveCurrentPath(),
+                    'pageName' => 'page',
+                ]);
+
+            }
+
+            
+            * create a new LengthAwarePaginator instance
+            * @param $items
+            * @param $perPage
+            * @param int $page
+            * @param array $options
+            *  @return illuminate\Pagination\LengthAwarePaginator
+            *
+            *
+    protected static function paginator($items, $total, $perPage, $currentPage, $options){
+
+        return Container::getInstance()->makeWith(LengthAwarePaginator::class, compact('items', 'total', 'perPage', 'currentPage', 'options'));
+
+    }
+    */
+
+
+
+
+
+
+	routes/web/php
+
+	Route::get('/returnCollection', function(){
+
+    $collection = collect([
+      'home' =>  1,
+      'away' => 2,
+      'draw' => 3,
+      'hal-time' => 4,
+      'full-time' => 5,
+      'car' => 6,
+      'table'=> 7,
+      'spoon' => 8,
+       'fuck' => 9,
+       'suck' => 10]);
+
+       return response()->json(\App\Helpers\General\CollectionHelper::paginate($collection, 5));
+});
