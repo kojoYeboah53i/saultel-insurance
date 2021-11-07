@@ -4,9 +4,14 @@
 <div class=""  style=" display:flex; flex-direction:column; align-items:center; width:80%; text-align: center; margin:auto; padding:50px;">
     @if(!empty($facilities[0]))  
     <div class="layout-px-spacing">
-
+  
         <div class="row layout-top-spacing">
     <div class="col col-lg-12  layout-spacing">
+        @if (session('success'))
+        <div class="alert alert-success p-2 mb-5">
+            {{ session('success') }}
+        </div>
+        @endif
         <div class="widget widget-table-two" style="margin-top: -70px;">
 
             <div class="widget-heading">
@@ -42,13 +47,24 @@
                                 <td><div class="td-content">{{$facility->ownership}}</div></td>
                                 <td><div class="td-content pricing"><span class=""><button class="btn btn-sm btn-outline-success"> View</button></span></div></td>
                                 <td><div class="td-content"><span class="badge "> 
-                                    <div class="col-sm " style="display:flex; justify-content: space-between; align-items: center">
-                                        <a href="{{route('facility.edit', $facility->id)}}" class="btn btn-sm btn-outline-warning">Edit</a>
-                                        <form action="{{route('facility.destroy', $facility->id)}}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
-                                        </form>
+                                    <div class="d-flex justify-content-between">
+                                        <div  class="mx-10" >
+                                            <form  action="{{ route('facility.edit', $facility->id) }}" method="POST">
+                                                @csrf
+                                                @method('put')
+                                                <input class="btn btn-sm btn-outline-warning" type="submit" value="Edit" />
+                                            </form>
+                                        </div>
+                                        
+                                        {{-- delete form --}}
+                                            <div>
+                                          
+                                                <form action="{{ route('facility.delete', $facility->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <input class="btn btn-sm btn-outline-danger" type="submit" value="Delete" />
+                                                </form>
+                                            </div>
                                     </div>
                                 </span></div></td>
                             </tr>
