@@ -7,10 +7,10 @@
 
         <div class="row layout-top-spacing">
     <div class="col col-lg-12  layout-spacing">
-        <div class="widget widget-table-two">
+        <div class="widget widget-table-two" style="margin-top: -70px;">
 
             <div class="widget-heading">
-                <h5 class="p-4" style="margin:50px; font-weight: 400">Health Facilities</h5>
+                <h5 class="p-4" style="font-size:2.3rem; margin-bottom: 40px; margin:10px; font-weight: 400">Health Facilities</h5>
             </div>
 
             <div class="widget-content">
