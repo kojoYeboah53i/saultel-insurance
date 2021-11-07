@@ -4,6 +4,7 @@ namespace App\Http\Controllers\ServiceProvider;
 
 use App\Http\Controllers\Controller;
 use App\Models\Health;
+use App\Models\healthFacilities;
 use Faker\Extension\Container;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -19,7 +20,8 @@ class FacilitiesController extends Controller
         // return view('service_provider.facilities.index');
     }
     public function getServiceProviders(){
-        $facilities = Health::all()->paginate(24);
+        $facilities = healthFacilities::all()->paginate();
+        // dd($facilities);
         $data = [
             'category_name' => 'health facilities',
             'page_name' => 'health facilities',
@@ -33,14 +35,14 @@ class FacilitiesController extends Controller
     // edit facility
     public function update($id)
     {
-        $facility = Health::find($id);
+        $facility = healthFacilities::find($id);
         return view('service_provider.facilities.edit', compact('facility'));
     }
 
     //delete facility
     public function delete($id)
     {
-        $facility = Health::find($id);
+        $facility = healthFacilities::find($id);
         $facility->delete();
         return redirect()->back();
     }
