@@ -21,8 +21,8 @@ class FacilitiesController extends Controller
         $facilities = healthFacilities::all()->paginate();
         // dd($facilities);
         $data = [
-            'category_name' => 'health facilities',
-            'page_name' => 'health facilities',
+            'category_name' => 'service-providers',
+            'page_name' => 'view-service-providers',
             'has_scrollspy' => 0,
             'scrollspy_offset' => '',
     
