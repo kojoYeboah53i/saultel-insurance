@@ -103,11 +103,11 @@
                         </a>
                         <ul class="collapse submenu list-unstyled {{ ($category_name === 'apps') ? 'show' : '' }}" id="serviceProvider" data-parent="#accordionExample">
                    
-                        <li class="{{ ($page_name === 'mailbox') ? 'active' : '' }}">
+                        <li class="{{ ($page_name === 'add-service-provider') ? 'active' : '' }}">
                             <a href="#"> Add Service Provider </a>
                         </li>
-                        <li class="{{ ($page_name === 'todo-list') ? 'active' : '' }}">
-                            <a href="#"> View Service Providers </a>
+                        <li class="{{ ($page_name === 'service-proviers') ? 'active' : '' }}">
+                            <a href="{{route('serviceProvider')}}"> View Service Providers </a>
                         </li>      
     
                         </ul>
@@ -139,7 +139,7 @@
                         </a>
       
                     </li>
-                    <li class="menu {{ ($category_name === 'excel') ? 'active' : '' }}">
+                    {{-- <li class="menu {{ ($category_name === 'excel') ? 'active' : '' }}">
                         <a href="#" data-active="{{ ($category_name === 'claims') ? 'true' : 'false' }}" data-toggle="collapse" aria-expanded="{{ ($category_name === 'excel') ? 'true' : 'false' }}" class="dropdown-toggle">
                             <a href="/excel">
                                 <div class="">
@@ -152,7 +152,7 @@
                             </div>
                         </a>
       
-                    </li>
+                    </li> --}}
                     @endif
                 
                 </ul>

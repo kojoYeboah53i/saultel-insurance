@@ -7,9 +7,7 @@ use App\Models\Health;
 use App\Models\healthFacilities;
 use Faker\Extension\Container;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use Illuminate\Pagination\Paginator;
-use Illuminate\Pagination\LengthAwarePaginator;
+
 
 class FacilitiesController extends Controller
 {
