@@ -27,7 +27,8 @@ class FacilitiesController extends Controller
             'scrollspy_offset' => '',
     
         ];
-        return view('pages.partner.health', compact('facilities'))->with($data);
+        return view('serviceProvider.view', compact('facilities'))->with($data);
+        // resources\views\ServiceProvider\view.blade.php
     }
 
     // edit facility
