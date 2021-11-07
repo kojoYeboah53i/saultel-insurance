@@ -21,8 +21,8 @@ class FacilitiesController extends Controller
         $facilities = healthFacilities::all()->paginate();
         // dd($facilities);
         $data = [
-            'category_name' => 'health facilities',
-            'page_name' => 'health facilities',
+            'category_name' => 'service-providers',
+            'page_name' => 'view-service-providers',
             'has_scrollspy' => 0,
             'scrollspy_offset' => '',
     
@@ -34,16 +34,21 @@ class FacilitiesController extends Controller
     // edit facility
     public function update($id)
     {
-        $facility = healthFacilities::find($id);
-        return view('service_provider.facilities.edit', compact('facility'));
+        $facility = healthFacilities::findOrFail($id);
+        $facility->update($request->all());
+        return redirect()->back()->with('success', 'Facility updated successfully');
+        // return view('service_provider.facilities.edit', compact('facility'));
     }
 
     //delete facility
     public function delete($id)
     {
         $facility = healthFacilities::find($id);
-        $facility->delete();
-        return redirect()->back();
+
+        if ($facility->delete()) {
+            return redirect()->back()->with('success', 'Facility deleted successfully');
+        }
+
     }
         
 
