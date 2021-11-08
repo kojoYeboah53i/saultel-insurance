@@ -58,3 +58,9 @@
 - button redirects to a page with the columns for editing the data
   in the past i did this with ajax call and getting the specific health facility with an ID
   which means this has to go through and api
+
+  ## server login
+  https://my.bluehost.com/web-hosting/cplogin
+
+  UN: owudarko@gmail.com
+  PW: Ananse@xyw!Lehona59
