@@ -49,9 +49,9 @@
                                 <td><div class="td-content"><span class="badge "> 
                                     <div class="d-flex justify-content-between">
                                         <div  class="mx-10" >
-                                            <form  action="{{ route('facility.edit', $facility->id) }}" method="POST">
+                                            <form  action="{{ route('facility.edit.specific', $facility->id) }}" method="POST">
                                                 @csrf
-                                                @method('put')
+                                                {{-- @method('put') --}}
                                                 <input class="btn btn-sm btn-outline-warning" type="submit" value="Edit" />
                                             </form>
                                         </div>

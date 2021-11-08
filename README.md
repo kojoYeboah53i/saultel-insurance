@@ -52,4 +52,9 @@
  - get api keys
  - show specific lat and lon for each health facility 
  - show a big map show all the health facilities across the country on the map 
- - 
+
+
+# edit health facility
+- button redirects to a page with the columns for editing the data
+  in the past i did this with ajax call and getting the specific health facility with an ID
+  which means this has to go through and api

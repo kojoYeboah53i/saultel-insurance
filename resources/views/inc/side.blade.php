@@ -85,6 +85,9 @@
                         <li class="{{ ($page_name === 'add-service-provider') ? 'active' : '' }}">
                             <a href="#"> Add Service Provider </a>
                         </li>
+                        <li class="{{ ($page_name === 'edit-service-provider') ? 'active' : '' }}">
+                            <a href="/edit-facility"> Edit Service Provider </a>
+                        </li>
                         <li class="{{ ($page_name === 'view-service-proviers') ? 'active' : '' }}">
                             <a href="{{route('serviceProvider')}}"> View Service Providers </a>
                         </li>      
