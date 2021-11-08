@@ -47,3 +47,9 @@
   
   # after they login
  - profile 
+
+  # map
+ - get api keys
+ - show specific lat and lon for each health facility 
+ - show a big map shwow
+ - 
