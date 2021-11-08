@@ -51,5 +51,5 @@
   # map
  - get api keys
  - show specific lat and lon for each health facility 
- - show a big map shwow
+ - show a big map show all the health facilities across the country on the map 
  - 
