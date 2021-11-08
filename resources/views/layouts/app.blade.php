@@ -50,7 +50,21 @@
     <!-- END MAIN CONTAINER -->
 
     @include('inc.scripts')
+    <script
+    async></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpW5y5Ly9_PQrYhaVuu_gC1zzeqzOgRO0&callback=initMap"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+            <script>
 
+            let map;
+
+            function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+            });
+            }
+            </script>
   
 </body>
 </html>

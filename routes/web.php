@@ -1403,3 +1403,26 @@ Route::get('service/providers/',
 //route facility.edit
 Route::put('/facility/{id}', [FacilitiesController::class, 'update'])->name('facility.edit');//facility.edit
 Route::delete('/facility/delete{id}', [FacilitiesController::class, 'delete'])->name('facility.delete');
+Route::post('/facility/editSpecific{id}', [FacilitiesController::class, 'editSpecific'])->name('facility.edit.specific');
+
+
+Route::get('map', function() {
+    $data = [
+        'category_name' => 'map',
+        'page_name' => 'map',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+
+    ];
+    return view('serviceProvider.map')->with($data);
+})->name('map');
+
+Route::get('edit-facility', function(){
+    $data = [
+        'category_name' => 'service-providers',
+        'page_name' => 'edit-service-providers',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+return view('serviceProvider.edit')->with($data);
+})->name('edit.facility');
