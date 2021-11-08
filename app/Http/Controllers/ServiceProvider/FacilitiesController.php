@@ -32,13 +32,24 @@ class FacilitiesController extends Controller
     }
 
     // edit facility
-    public function update($id)
+    public function update(Request $request, $id)
     {
         $facility = healthFacilities::findOrFail($id);
         // dd($facility);
-        $facility->update('where', 'id', $id);
-        return redirect()->back()->with('success', 'Facility updated successfully');
-        return view('service_provider.facilities.view', compact('facility'));
+        $facility->update($request->all());
+        if($facility){
+            session()->flash('success', 'Facility updated successfully');//->flash('type', 'success');
+        }
+        $facilities = healthFacilities::all()->paginate();
+        $data = [
+            'category_name' => 'service-providers',
+            'page_name' => 'view-service-providers',
+            'has_scrollspy' => 0,
+            'scrollspy_offset' => '',
+    
+        ];
+
+        return view('serviceProvider.view', compact('facilities'))->with($data);
     }
 
     //delete facility
@@ -61,7 +72,9 @@ class FacilitiesController extends Controller
             'scrollspy_offset' => '',
 
         ];
+
         $facility= healthFacilities::findOrFail($id);
+        
         return view('serviceProvider.edit', compact('facility'))->with($data);
 
     }
