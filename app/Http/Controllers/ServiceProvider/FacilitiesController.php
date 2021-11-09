@@ -38,7 +38,7 @@ class FacilitiesController extends Controller
         // dd($facility);
         $facility->update($request->all());
         if($facility){
-            session()->flash('success', 'Facility updated successfully');//->flash('type', 'success');
+            $request->session()->flash('success', 'Facility updated successfully');//->flash('type', 'success');
         }
         $facilities = healthFacilities::all()->paginate();
         $data = [
@@ -74,7 +74,7 @@ class FacilitiesController extends Controller
         ];
 
         $facility= healthFacilities::findOrFail($id);
-        
+
         return view('serviceProvider.edit', compact('facility'))->with($data);
 
     }
