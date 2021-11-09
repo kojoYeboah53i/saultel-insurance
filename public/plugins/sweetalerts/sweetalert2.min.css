@@ -3,14 +3,17 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 body.swal2-shown {
   overflow-y: hidden;
 }
+
 body.swal2-iosfix {
   position: fixed;
   left: 0;
@@ -34,9 +37,11 @@ body.swal2-iosfix {
   background-color: transparent;
   z-index: 1060;
 }
+
 .swal2-container.swal2-fade {
   transition: background-color 0.1s;
 }
+
 .swal2-container.swal2-shown {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -53,12 +58,15 @@ body.swal2-iosfix {
   position: relative;
   max-width: 100%;
 }
+
 .swal2-modal:focus {
   outline: none;
 }
+
 .swal2-modal.swal2-loading {
   overflow-y: hidden;
 }
+
 .swal2-modal .swal2-title {
   color: #bfc9d4 !important;
   font-size: 24px !important;
@@ -71,16 +79,20 @@ body.swal2-iosfix {
   display: block;
   word-wrap: break-word;
 }
+
 .swal2-modal.background-modal .swal2-title {
   color: #fff !important;
 }
+
 .swal2-modal .swal2-buttonswrapper {
   margin-top: 15px;
 }
+
 .swal2-modal .swal2-buttonswrapper:not(.swal2-loading) .swal2-styled[disabled] {
   opacity: 0.4;
   cursor: no-drop;
 }
+
 .swal2-modal .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-confirm {
   box-sizing: border-box;
   border: 4px solid transparent;
@@ -102,10 +114,12 @@ body.swal2-iosfix {
   -ms-user-select: none;
   user-select: none;
 }
+
 .swal2-modal .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-cancel {
   margin-left: 30px;
   margin-right: 30px;
 }
+
 .swal2-modal .swal2-buttonswrapper.swal2-loading :not(.swal2-styled).swal2-confirm::after {
   display: inline-block;
   content: "";
@@ -120,6 +134,7 @@ body.swal2-iosfix {
   -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
   animation: rotate-loading 1.5s linear 0s infinite normal;
 }
+
 .swal2-modal .swal2-styled {
   border: 0;
   box-shadow: none;
@@ -144,6 +159,7 @@ body.swal2-iosfix {
   max-width: 100%;
   width: 50%;
 }
+
 .swal2-modal .swal2-close {
   background: transparent;
   border: 0;
@@ -161,12 +177,15 @@ body.swal2-iosfix {
   color: #cccccc;
   transition: color 0.1s ease;
 }
+
 .swal2-modal .swal2-close:hover {
   color: #d55;
 }
+
 .swal2-modal > .swal2-input, .swal2-modal > .swal2-file, .swal2-modal > .swal2-textarea, .swal2-modal > .swal2-select, .swal2-modal > .swal2-radio, .swal2-modal > .swal2-checkbox {
   display: none;
 }
+
 .swal2-modal .swal2-content {
   font-size: 18px;
   text-align: center;
@@ -179,9 +198,11 @@ body.swal2-iosfix {
   color: #e95f2b !important;
   word-wrap: break-word;
 }
+
 .swal2-modal .swal2-input, .swal2-modal .swal2-file, .swal2-modal .swal2-textarea, .swal2-modal .swal2-select, .swal2-modal .swal2-radio, .swal2-modal .swal2-checkbox {
   margin: 20px auto;
 }
+
 .swal2-modal .swal2-input, .swal2-modal .swal2-file, .swal2-modal .swal2-textarea {
   height: auto;
   border: 1px solid #1b2e4b !important;
@@ -203,22 +224,27 @@ pre {
   border-color: #e7515a !important;
   box-shadow: 0 0 2px #f27474 !important;
 }
+
 .swal2-modal .swal2-input:focus, .swal2-modal .swal2-textarea:focus {
   outline: none;
   border: 1px solid #3b3f5c;
   box-shadow: 0 0 3px #c4e6f5;
 }
+
 .swal2-modal .swal2-file:focus {
   outline: none;
   box-shadow: 0 0 3px #c4e6f5;
 }
+
 .swal2-modal .swal2-input::-webkit-input-placeholder, .swal2-modal .swal2-file::-webkit-input-placeholder, .swal2-modal .swal2-textarea::-webkit-input-placeholder, .swal2-modal .swal2-input::-moz-placeholder, .swal2-modal .swal2-file::-moz-placeholder, .swal2-modal .swal2-textarea::-moz-placeholder, .swal2-modal .swal2-input:-ms-input-placeholder, .swal2-modal .swal2-file:-ms-input-placeholder, .swal2-modal .swal2-textarea:-ms-input-placeholder, .swal2-modal .swal2-input::placeholder, .swal2-modal .swal2-file::placeholder, .swal2-modal .swal2-textarea::placeholder {
   color: #ebedf2;
 }
+
 .swal2-modal .swal2-range input {
   float: left;
   width: 80%;
 }
+
 .swal2-modal .swal2-range output {
   float: right;
   width: 20%;
@@ -226,6 +252,7 @@ pre {
   font-weight: 600;
   text-align: center;
 }
+
 .swal2-modal .swal2-range input, .swal2-modal .swal2-range output {
   height: 43px;
   line-height: 41px;
@@ -234,16 +261,20 @@ pre {
   padding: 0;
   outline: none;
 }
+
 .swal2-modal .swal2-input {
   height: 43px;
   padding: 0 12px;
 }
+
 .swal2-modal .swal2-input[type=number] {
   max-width: 150px;
 }
+
 .swal2-modal .swal2-file {
   font-size: 16px;
 }
+
 .swal2-modal .swal2-textarea {
   height: 108px;
   padding: 12px;
@@ -255,6 +286,7 @@ pre {
   box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.1);
   transition: border-color box-shadow 0.3s;
 }
+
 .swal2-modal .swal2-file {
   width: 100%;
   box-sizing: border-box;
@@ -265,6 +297,7 @@ pre {
   box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.1);
   transition: border-color box-shadow 0.3s;
 }
+
 .swal2-modal .swal2-select {
   color: #888ea8;
   font-size: inherit;
@@ -274,26 +307,33 @@ pre {
   border: 1px solid #ebedf2;
   outline: none;
 }
+
 .swal2-modal .swal2-radio {
   border: 0;
 }
+
 .swal2-modal .swal2-radio label:not(:first-child) {
   margin-left: 20px;
 }
+
 .swal2-modal .swal2-radio input, .swal2-modal .swal2-radio span {
   vertical-align: middle;
   outline: none;
 }
+
 .swal2-modal .swal2-radio input {
   margin: 0 6px 0 0;
 }
+
 .swal2-modal .swal2-checkbox {
   color: #e7515a;
 }
+
 .swal2-modal .swal2-checkbox input, .swal2-modal .swal2-checkbox span {
   vertical-align: middle;
   outline: none;
 }
+
 .swal2-modal .swal2-validationerror {
   background-color: #f1f2f3;
   margin: 0 -20px;
@@ -304,6 +344,7 @@ pre {
   font-weight: 300;
   display: none;
 }
+
 .swal2-modal .swal2-validationerror::before {
   font-family: flaticon !important;
   content: "\f231";
@@ -322,10 +363,12 @@ pre {
   .swal2-range input {
     width: 100% !important;
   }
+
   .swal2-range output {
     display: none;
   }
 }
+
 .swal2-icon {
   width: 80px;
   height: 80px;
@@ -341,15 +384,18 @@ pre {
   -ms-user-select: none;
   user-select: none;
 }
+
 .swal2-icon.swal2-error {
   border-color: #e7515a !important;
   border: 5px solid #f1f2f3 !important;
   box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
 }
+
 .swal2-icon.swal2-error .swal2-x-mark {
   position: relative;
   display: block;
 }
+
 .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
   position: absolute;
   height: 5px;
@@ -359,14 +405,17 @@ pre {
   top: 37px;
   border-radius: 2px;
 }
+
 .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
   transform: rotate(45deg);
   left: 17px;
 }
+
 .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
   transform: rotate(-45deg);
   right: 16px;
 }
+
 .swal2-icon.swal2-warning {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffbb44 !important;
@@ -376,6 +425,7 @@ pre {
   line-height: 80px;
   text-align: center;
 }
+
 .swal2-icon.swal2-info {
   font-family: "Open Sans", sans-serif;
   color: #506690 !important;
@@ -385,6 +435,7 @@ pre {
   line-height: 80px;
   text-align: center;
 }
+
 .swal2-icon.swal2-question {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #506690 !important;
@@ -393,6 +444,7 @@ pre {
   text-align: center;
   box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
 }
+
 .swal2-icon:not(.swal2-animate-error-icon):not(.swal2-animate-success-icon) {
   width: 2em !important;
   line-height: 119px !important;
@@ -411,6 +463,7 @@ pre {
 .swal2-icon.swal2-success {
   border-color: #a5dc86;
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-circular-line] {
   border-radius: 50%;
   position: absolute;
@@ -418,6 +471,7 @@ pre {
   height: 120px;
   transform: rotate(45deg);
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
   border-radius: 120px 0 0 120px;
   top: -7px;
@@ -425,6 +479,7 @@ pre {
   transform: rotate(-45deg);
   transform-origin: 60px 60px;
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
   border-radius: 0 120px 120px 0;
   top: -11px;
@@ -432,6 +487,7 @@ pre {
   transform: rotate(-45deg);
   transform-origin: 0 60px;
 }
+
 .swal2-icon.swal2-success .swal2-success-ring {
   width: 80px;
   height: 80px;
@@ -443,6 +499,7 @@ pre {
   top: -4px;
   z-index: 2;
 }
+
 .swal2-icon.swal2-success .swal2-success-fix {
   width: 7px;
   height: 90px;
@@ -452,6 +509,7 @@ pre {
   z-index: 1;
   transform: rotate(-45deg);
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-line] {
   height: 5px;
   background-color: #009688 !important;
@@ -460,12 +518,14 @@ pre {
   position: absolute;
   z-index: 2;
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {
   width: 25px;
   left: 14px;
   top: 46px;
   transform: rotate(45deg);
 }
+
 .swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {
   width: 47px;
   right: 8px;
@@ -478,10 +538,12 @@ pre {
   margin: 0 0 20px;
   padding: 0;
 }
+
 .swal2-progresssteps li {
   display: inline-block;
   position: relative;
 }
+
 .swal2-progresssteps .swal2-progresscircle {
   background: #1b55e2;
   border-radius: 2em;
@@ -492,18 +554,23 @@ pre {
   width: 2em;
   z-index: 20;
 }
+
 .swal2-progresssteps .swal2-progresscircle:first-child {
   margin-left: 0;
 }
+
 .swal2-progresssteps .swal2-progresscircle:last-child {
   margin-right: 0;
 }
+
 .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {
   background: #191e3a !important;
 }
+
 .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle, .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {
   background: #506690 !important;
 }
+
 .swal2-progresssteps .swal2-progressline {
   background: #1b55e2;
   height: 0.4em;
@@ -519,54 +586,67 @@ pre {
   0% {
     transform: scale(0.7);
   }
+
   45% {
     transform: scale(1.05);
   }
+
   80% {
     transform: scale(0.95);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes showSweetAlert {
   0% {
     transform: scale(0.7);
   }
+
   45% {
     transform: scale(1.05);
   }
+
   80% {
     transform: scale(0.95);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @-webkit-keyframes hideSweetAlert {
   0% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(0.5);
     opacity: 0;
   }
 }
+
 @keyframes hideSweetAlert {
   0% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(0.5);
     opacity: 0;
   }
 }
+
 .swal2-show {
   -webkit-animation: showSweetAlert 0.3s;
   animation: showSweetAlert 0.3s;
 }
+
 .swal2-show.swal2-noanimation {
   -webkit-animation: none;
   animation: none;
@@ -576,6 +656,7 @@ pre {
   -webkit-animation: hideSweetAlert 0.15s forwards;
   animation: hideSweetAlert 0.15s forwards;
 }
+
 .swal2-hide.swal2-noanimation {
   -webkit-animation: none;
   animation: none;
@@ -587,126 +668,152 @@ pre {
     left: 1px;
     top: 19px;
   }
+
   54% {
     width: 0;
     left: 1px;
     top: 19px;
   }
+
   70% {
     width: 50px;
     left: -8px;
     top: 37px;
   }
+
   84% {
     width: 17px;
     left: 21px;
     top: 48px;
   }
+
   100% {
     width: 25px;
     left: 14px;
     top: 45px;
   }
 }
+
 @keyframes animate-success-tip {
   0% {
     width: 0;
     left: 1px;
     top: 19px;
   }
+
   54% {
     width: 0;
     left: 1px;
     top: 19px;
   }
+
   70% {
     width: 50px;
     left: -8px;
     top: 37px;
   }
+
   84% {
     width: 17px;
     left: 21px;
     top: 48px;
   }
+
   100% {
     width: 25px;
     left: 14px;
     top: 45px;
   }
 }
+
 @-webkit-keyframes animate-success-long {
   0% {
     width: 0;
     right: 46px;
     top: 54px;
   }
+
   65% {
     width: 0;
     right: 46px;
     top: 54px;
   }
+
   84% {
     width: 55px;
     right: 0;
     top: 35px;
   }
+
   100% {
     width: 47px;
     right: 8px;
     top: 38px;
   }
 }
+
 @keyframes animate-success-long {
   0% {
     width: 0;
     right: 46px;
     top: 54px;
   }
+
   65% {
     width: 0;
     right: 46px;
     top: 54px;
   }
+
   84% {
     width: 55px;
     right: 0;
     top: 35px;
   }
+
   100% {
     width: 47px;
     right: 8px;
     top: 38px;
   }
 }
+
 @-webkit-keyframes rotatePlaceholder {
   0% {
     transform: rotate(-45deg);
   }
+
   5% {
     transform: rotate(-45deg);
   }
+
   12% {
     transform: rotate(-405deg);
   }
+
   100% {
     transform: rotate(-405deg);
   }
 }
+
 @keyframes rotatePlaceholder {
   0% {
     transform: rotate(-45deg);
   }
+
   5% {
     transform: rotate(-45deg);
   }
+
   12% {
     transform: rotate(-405deg);
   }
+
   100% {
     transform: rotate(-405deg);
   }
 }
+
 .swal2-animate-success-line-tip {
   -webkit-animation: animate-success-tip 0.75s;
   animation: animate-success-tip 0.75s;
@@ -727,21 +834,25 @@ pre {
     transform: rotateX(100deg);
     opacity: 0;
   }
+
   100% {
     transform: rotateX(0deg);
     opacity: 1;
   }
 }
+
 @keyframes animate-error-icon {
   0% {
     transform: rotateX(100deg);
     opacity: 0;
   }
+
   100% {
     transform: rotateX(0deg);
     opacity: 1;
   }
 }
+
 .swal2-animate-error-icon {
   -webkit-animation: animate-error-icon 0.5s;
   animation: animate-error-icon 0.5s;
@@ -753,42 +864,50 @@ pre {
     margin-top: 26px;
     opacity: 0;
   }
+
   50% {
     transform: scale(0.4);
     margin-top: 26px;
     opacity: 0;
   }
+
   80% {
     transform: scale(1.15);
     margin-top: -6px;
   }
+
   100% {
     transform: scale(1);
     margin-top: 0;
     opacity: 1;
   }
 }
+
 @keyframes animate-x-mark {
   0% {
     transform: scale(0.4);
     margin-top: 26px;
     opacity: 0;
   }
+
   50% {
     transform: scale(0.4);
     margin-top: 26px;
     opacity: 0;
   }
+
   80% {
     transform: scale(1.15);
     margin-top: -6px;
   }
+
   100% {
     transform: scale(1);
     margin-top: 0;
     opacity: 1;
   }
 }
+
 .swal2-animate-x-mark {
   -webkit-animation: animate-x-mark 0.5s;
   animation: animate-x-mark 0.5s;
@@ -798,18 +917,22 @@ pre {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotate-loading {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @media (max-width: 575px) {
   .background-modal {
     padding: 5em 4em !important;

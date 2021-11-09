@@ -3,26 +3,32 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 /*
 ==================
     Switches
 ==================
 */
+
 /* The switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
   width: 35px;
   height: 18px;
 }
+
 .switch input {
   display: none;
 }
+
 .switch .slider {
   position: absolute;
   cursor: pointer;
@@ -33,6 +39,7 @@
   background-color: #ebedf2;
   transition: 0.4s;
 }
+
 .switch .slider:before {
   position: absolute;
   content: "";
@@ -44,26 +51,35 @@
   bottom: 2px;
   box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.34);
 }
+
 .switch input:checked + .slider:before {
   transform: translateX(17px);
 }
+
 .switch .slider.round {
   border-radius: 34px;
 }
+
 .switch .slider.round:before {
   border-radius: 50%;
 }
+
 .switch.s-secondary input:checked + .slider {
   background-color: #5c1ac3;
 }
+
 .switch.s-secondary input:focus + .slider {
   box-shadow: 0 0 1px #5c1ac3;
 }
 
 /* Hide default HTML checkbox */
+
 /* The slider */
+
 /* Rounded Slider Switches */
+
 /*----------Theme checkbox---------*/
+
 .new-control {
   position: relative;
   display: inline-flex;
@@ -82,6 +98,7 @@
   color: #888ea8;
   margin-bottom: 0;
 }
+
 .new-control.new-checkbox .new-control-indicator {
   position: absolute;
   top: 0.25rem;
@@ -100,12 +117,15 @@
   background-size: 50% 50%;
   border-radius: 2px;
 }
+
 .new-control.new-checkbox > input:checked ~ span.new-control-indicator {
   background: #888ea8;
 }
+
 .new-control.new-checkbox > input:checked ~ span.new-control-indicator:after {
   display: block;
 }
+
 .new-control.new-checkbox span.new-control-indicator:after {
   border: solid #fff;
   top: 50%;
@@ -120,18 +140,23 @@
   position: absolute;
   display: none;
 }
+
 .new-control.new-checkbox[class*=checkbox-outline-] > input:checked ~ span.new-control-indicator {
   background-color: transparent;
 }
+
 .new-control.new-checkbox.new-checkbox-line-through.checkbox-outline-primary > input:checked ~ span.new-chk-content {
   color: #1b55e2;
 }
+
 .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator {
   border: 1px solid #1b55e2;
 }
+
 .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator:after {
   border-color: #1b55e2;
 }
+
 .new-control.new-checkbox.checkbox-primary > input:checked ~ span.new-control-indicator {
   background: #1b55e2;
 }
@@ -142,12 +167,14 @@
   background-color: #1b2e4b;
   color: #888ea8;
 }
+
 .list-group-item.active {
   color: #fff;
   background-color: #191e3a;
   border-color: transparent;
   box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.15);
 }
+
 .list-group-item.disabled, .list-group-item:disabled {
   background: #506690;
   color: #888ea8;
@@ -172,26 +199,32 @@ code {
 }
 
 /*------list group-----*/
+
 /*
     Icons Meta
 */
+
 .list-group.list-group-icons-meta .list-group-item.active {
   color: #fff;
   background-color: #191e3a;
 }
+
 .list-group.list-group-icons-meta .list-group-item.active .media svg {
   font-size: 27px;
   color: #fff;
 }
+
 .list-group.list-group-icons-meta .list-group-item.active .media .media-body h6, .list-group.list-group-icons-meta .list-group-item.active .media .media-body p {
   color: #fff;
   font-weight: 500;
 }
+
 .list-group.list-group-icons-meta .list-group-item .media svg {
   width: 20px;
   color: #25d5e4;
   height: 20px;
 }
+
 .list-group.list-group-icons-meta .list-group-item .media .media-body h6 {
   color: #888ea8;
   font-weight: 700;
@@ -199,27 +232,33 @@ code {
   font-size: 15px;
   letter-spacing: 1px;
 }
+
 .list-group.list-group-icons-meta .list-group-item .media .media-body p {
   color: #888ea8;
   margin-bottom: 0;
   font-size: 12px;
   font-weight: 600;
 }
+
 .list-group.list-group-media .list-group-item.active {
   background-color: #191e3a;
 }
+
 .list-group.list-group-media .list-group-item.active .media .media-body h6, .list-group.list-group-media .list-group-item.active .media .media-body p {
   color: #fff;
   font-weight: 500;
 }
+
 .list-group.list-group-media .list-group-item .media img {
   color: #1b55e2;
   width: 42px;
   height: 42px;
 }
+
 .list-group.list-group-media .list-group-item .media .media-body {
   align-self: center;
 }
+
 .list-group.list-group-media .list-group-item .media .media-body h6 {
   color: #888ea8;
   font-weight: 700;
@@ -227,16 +266,19 @@ code {
   font-size: 16px;
   letter-spacing: 1px;
 }
+
 .list-group.list-group-media .list-group-item .media .media-body p {
   color: #888ea8;
   margin-bottom: 0;
   font-size: 12px;
   font-weight: 600;
 }
+
 .list-group.task-list-group .list-group-item-action.active {
   background-color: #191e3a;
   color: #fff;
 }
+
 .list-group.task-list-group .list-group-item-action.active .new-control.new-checkbox {
   color: #fff;
   font-size: 14px;
@@ -245,6 +287,7 @@ code {
 /*
     Image Meta
 */
+
 /*
     task-list-group
 */

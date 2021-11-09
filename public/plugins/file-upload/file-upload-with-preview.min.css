@@ -3,19 +3,23 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .custom-file-container {
   box-sizing: border-box;
   position: relative;
   display: block;
 }
+
 .custom-file-container label {
   color: #009688;
 }
+
 .custom-file-container label .custom-file-container__image-clear {
   color: #e0e6ed;
 }
@@ -29,6 +33,7 @@
   margin-bottom: 0;
   margin-top: 5px;
 }
+
 .custom-file-container__custom-file:hover {
   cursor: pointer;
 }
@@ -41,6 +46,7 @@
   margin: 0;
   opacity: 0;
 }
+
 .custom-file-container__custom-file__custom-file-input:focus ~ span {
   outline: 1px dotted #515365;
   outline: 5px auto -webkit-focus-ring-color;
@@ -85,6 +91,7 @@
   color: #009688;
   box-sizing: border-box;
 }
+
 .custom-file-container__image-preview {
   box-sizing: border-box;
   transition: all 0.2s ease;
@@ -127,6 +134,7 @@
   margin-top: -6px;
   box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.25);
 }
+
 .custom-file-container__image-multi-preview__single-image-clear:hover {
   background: #cbcbbd;
   cursor: pointer;

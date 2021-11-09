@@ -3,12 +3,15 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 /*----------Theme checkbox---------*/
+
 .new-control {
   position: relative;
   display: inline-flex;
@@ -23,6 +26,7 @@
 .new-control.new-checkbox {
   cursor: pointer;
 }
+
 .new-control.new-checkbox .new-control-indicator {
   position: relative;
   top: 0.25rem;
@@ -42,12 +46,15 @@
   border-radius: 50%;
   margin-right: 13px;
 }
+
 .new-control.new-checkbox > input:checked ~ span.new-control-indicator {
   background: #888ea8;
 }
+
 .new-control.new-checkbox > input:checked ~ span.new-control-indicator:after {
   display: block;
 }
+
 .new-control.new-checkbox span.new-control-indicator:after {
   border: solid #009688;
   top: 50%;
@@ -62,6 +69,7 @@
   position: absolute;
   display: none;
 }
+
 .new-control.new-checkbox.checkbox-primary > input:checked ~ span.new-control-indicator {
   background: transparent;
   border: 2px solid #009688;
@@ -85,6 +93,7 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+
 .mail-overlay.mail-overlay-show {
   display: block;
   opacity: 0.7;
@@ -96,11 +105,13 @@
   max-width: 240px;
   border-right: 1px solid #191e3a;
 }
+
 .tab-title svg.feather-clipboard {
   color: #0e1726;
   fill: #25d5e4;
   margin-bottom: 13px;
 }
+
 .tab-title h5 {
   position: relative;
   font-size: 18px;
@@ -108,6 +119,7 @@
   letter-spacing: 3px;
   color: #888ea8;
 }
+
 .tab-title #addTask {
   position: absolute;
   font-size: 14px;
@@ -119,24 +131,29 @@
   background-color: #009688;
   box-shadow: none;
 }
+
 .tab-title #addTask svg {
   margin-right: 5px;
 }
+
 .tab-title.mail-menu-show {
   left: 0;
   width: 100%;
   min-width: 190px;
   height: 100%;
 }
+
 .tab-title hr {
   border-top: 1px solid #ebedf2;
   max-width: 54px;
 }
+
 .tab-title .todoList-sidebar-scroll {
   position: relative;
   width: 100%;
   height: calc(100vh - 346px);
 }
+
 .tab-title .nav-pills .nav-link.active {
   background-color: transparent;
   color: #191e3a;
@@ -145,9 +162,11 @@
   border-bottom-right-radius: 30px;
   padding: 10px 12px 10px 14px;
 }
+
 .tab-title .nav-pills .nav-link.active svg {
   color: #191e3a;
 }
+
 .tab-title .nav-pills a.nav-link {
   position: relative;
   font-weight: 700;
@@ -156,6 +175,7 @@
   padding: 20px 0px 20px 15px;
   transition: all 0.35s ease;
 }
+
 .tab-title .nav-pills .nav-link .badge {
   border-radius: 50%;
   position: absolute;
@@ -167,6 +187,7 @@
   border: 2px solid #e0e6ed;
   transform: none;
 }
+
 .tab-title .nav-pills .nav-link.active .badge {
   border: none;
   padding: 0 !important;
@@ -174,15 +195,19 @@
   top: 11px;
   color: #191e3a !important;
 }
+
 .tab-title .nav-pills a.nav-link.active:hover {
   color: #0e1726;
 }
+
 .tab-title .nav-pills a.nav-link.active:hover svg {
   color: #0e1726;
 }
+
 .tab-title .nav-pills a.nav-link:hover svg {
   fill: rgba(136, 142, 168, 0.2588235294);
 }
+
 .tab-title .nav-pills a.nav-link svg {
   color: #888ea8;
   margin-right: 6px;
@@ -191,14 +216,17 @@
   height: 21px;
   fill: rgba(0, 23, 55, 0.08);
 }
+
 .tab-title .nav-pills .nav-link#all-list .badge {
   color: #607d8b;
   border-color: #607d8b;
 }
+
 .tab-title .nav-pills .nav-link#todo-task-done .badge {
   color: #2196f3;
   border-color: #2196f3;
 }
+
 .tab-title .nav-pills .nav-link#todo-task-important .badge {
   color: #e2a03f;
   border-color: #e2a03f;
@@ -209,6 +237,7 @@
     Todo Inbox
 =====================
 */
+
 .todo-inbox {
   position: relative;
   overflow-x: hidden;
@@ -216,9 +245,11 @@
   max-width: 100%;
   width: 100%;
 }
+
 .todo-inbox .search {
   display: flex;
 }
+
 .todo-inbox .search input {
   border: none;
   padding: 12px 13px 12px 13px;
@@ -229,6 +260,7 @@
   color: #009688;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
+
 .todo-inbox .mail-menu {
   margin: 7px 13px 7px 13px;
   width: 25px;
@@ -237,9 +269,11 @@
   align-self: center;
   border-bottom: 1px solid #191e3a;
 }
+
 .todo-inbox .todo-item-inner {
   display: flex;
 }
+
 .todo-inbox .message-box {
   background: #fff;
   padding: 0 0 5px 0;
@@ -257,22 +291,28 @@
   cursor: pointer;
   position: relative;
 }
+
 .todo-inbox .todo-item:not(:last-child) {
   border-bottom: 1px solid #191e3a;
 }
+
 .todo-inbox .todo-item.todo-task-trash {
   display: none;
 }
+
 .todo-inbox .todo-item.todo-task-trash.trash-show {
   display: block;
 }
+
 .todo-inbox .todo-item .todo-item-inner .n-chk {
   padding: 20px 10px 20px 10px;
 }
+
 .todo-inbox .todo-item .todo-item-inner .todo-content {
   width: 100%;
   padding: 20px 10px 20px 10px;
 }
+
 .todo-inbox .todo-item .todo-item-inner .todo-heading {
   font-size: 18px;
   font-weight: 600;
@@ -280,9 +320,11 @@
   margin-bottom: 2px;
   transition: all 0.35s ease;
 }
+
 .todo-inbox .todo-item .todo-item-inner:hover .todo-heading {
   transform: translateY(0) scale(1.01);
 }
+
 .todo-inbox .todo-item .todo-item-inner p.todo-text {
   font-size: 14px;
   margin-bottom: 0;
@@ -294,9 +336,11 @@
   white-space: nowrap !important;
   max-width: calc(100vw - 730px);
 }
+
 .todo-inbox .todo-item .todo-item-inner:hover .todo-text {
   transform: translateY(0) scale(1.01);
 }
+
 .todo-inbox .todo-item .todo-item-inner p.meta-date {
   margin-bottom: 0;
   font-size: 12px;
@@ -304,90 +348,115 @@
   color: #888ea8;
   transition: all 0.35s ease;
 }
+
 .todo-inbox .todo-item .todo-item-inner:hover p.meta-date {
   transform: translateY(0) scale(1.01);
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown {
   float: right;
   padding: 20px 10px 20px 10px;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle {
   font-size: 20px;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle.danger svg {
   color: #e7515a;
   fill: rgba(231, 81, 90, 0.19);
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle.warning svg {
   color: #e2a03f;
   fill: rgba(233, 176, 43, 0.19);
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle.primary svg {
   color: #2196f3;
   fill: rgba(33, 150, 243, 0.19);
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu {
   left: -45px !important;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a.dropdown-item.active, .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a.dropdown-item:active {
   background: transparent;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a svg {
   font-size: 19px;
   font-weight: 700;
   margin-right: 7px;
   vertical-align: middle;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a.danger svg {
   color: #e7515a;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a.warning svg {
   color: #e2a03f;
 }
+
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-menu a.primary svg {
   color: #2196f3;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-menu .permanent-delete, .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-menu .revive {
   display: none;
 }
+
 .todo-inbox .todo-item.todo-task-trash .n-chk {
   display: none;
 }
+
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .todo-content {
   width: 100%;
   padding: 20px 14px 20px 14px;
 }
+
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .priority-dropdown .dropdown-menu {
   display: none;
 }
+
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .edit, .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .important, .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .delete {
   display: none;
 }
+
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .permanent-delete, .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .revive {
   display: block;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown {
   float: right;
   padding: 20px 10px 20px 10px;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-menu {
   left: -7px !important;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-menu .dropdown-item.active, .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-menu .dropdown-item:active {
   background-color: transparent;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-toggle svg {
   width: 21px;
   height: 21px;
   margin-top: 5px;
   color: #888ea8;
 }
+
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .show .dropdown-toggle svg {
   color: #bfc9d4;
 }
+
 .todo-inbox .todo-item.todo-task-done .todo-item-inner .todo-heading {
   text-decoration: line-through;
 }
+
 .todo-inbox .todo-item.todo-task-done .todo-item-inner p.meta-date, .todo-inbox .todo-item.todo-task-done .todo-item-inner p.todo-text {
   text-decoration: line-through;
 }
@@ -395,6 +464,7 @@
 .modal-content {
   border: none;
 }
+
 .modal-content svg.close {
   position: absolute;
   right: -7px;
@@ -410,6 +480,7 @@
   cursor: pointer;
   transition: 0.6s;
 }
+
 .modal-content svg.close:hover {
   box-shadow: none;
   transition: 0.6s;
@@ -430,6 +501,7 @@
   padding-left: 0;
   padding-right: 0;
 }
+
 #todoShowListItem .compose-content h5 {
   margin-bottom: 19px;
   padding-bottom: 19px;
@@ -443,9 +515,11 @@
   text-align: center;
   margin-bottom: 35px;
 }
+
 .compose-box .compose-content .task-text p {
   word-break: break-word;
 }
+
 .compose-box .compose-content .task-text img {
   max-width: 100%;
 }
@@ -453,6 +527,7 @@
 #todoShowListItem .modal-footer {
   border-top: 1px solid #191e3a;
 }
+
 #todoShowListItem .modal-footer .btn[data-dismiss=modal] {
   background-color: #1b2e4b;
   color: #bfc9d4;
@@ -460,6 +535,7 @@
   border: 1px solid #1b2e4b;
   padding: 10px 25px;
 }
+
 #todoShowListItem .modal-footer .btn[data-dismiss=modal] svg {
   margin-right: 8px;
   width: 19px;
@@ -473,9 +549,11 @@
   color: #009688;
   font-weight: 600;
 }
+
 .compose-box .compose-content form #taskdescription {
   height: 170px;
 }
+
 .compose-box .compose-content form .validation-text {
   display: none;
   color: #e7515a;
@@ -490,6 +568,7 @@
   border-top: none;
   padding-top: 0;
 }
+
 #addTaskModal .modal-footer .btn[data-dismiss=modal] {
   background-color: #1b2e4b;
   color: #bfc9d4;
@@ -497,6 +576,7 @@
   border: 1px solid #1b2e4b;
   padding: 10px 25px;
 }
+
 #addTaskModal .modal-footer .btn.add-tsk {
   background-color: #1b55e2;
   color: #fff;
@@ -504,6 +584,7 @@
   border: 1px solid #1b55e2;
   padding: 10px 25px;
 }
+
 #addTaskModal .modal-footer .btn.edit-tsk {
   background-color: #009688;
   color: #fff;
@@ -524,11 +605,13 @@
   .todo-inbox {
     display: block;
   }
+
   .todo-inbox .message-box {
     width: 100%;
     margin-bottom: 40px;
   }
 }
+
 @media (max-width: 991px) {
   .mail-box-container {
     overflow-x: hidden;
@@ -538,13 +621,16 @@
   .todo-inbox .search {
     border-bottom: 1px solid #191e3a;
   }
+
   .todo-inbox .mail-menu {
     border-bottom: none;
   }
+
   .todo-inbox .search input {
     border-right: 1px solid #191e3a;
     border-bottom: none;
   }
+
   .todo-inbox .todo-item .todo-item-inner p.todo-text {
     max-width: calc(100vw - 228px);
   }
@@ -566,31 +652,38 @@
     opacity: 0.8 !important;
   }
 }
+
 @media (max-width: 575px) {
   .todo-inbox .mail-item div.mail-item-heading .mail-item-inner .f-body > div {
     display: block;
   }
+
   .todo-inbox .mail-item div.mail-item-heading .mail-item-inner .f-body .meta-time {
     margin-bottom: 0;
     float: none;
   }
 }
+
 /*
 =====================
     IE Support
 =====================
 */
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
+
   .tab-title {
     width: 100%;
   }
 }
+
 /*
 =====================
     Mozilla Support 
 =====================
 */
+
 @-moz-document url-prefix() {
   .todo-inbox .todo-item .todo-item-inner .todo-content {
     overflow: hidden !important;

@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/vyxxgqmy/public_html/dosh/
+ - /bin/cp * $DEPLOYPATH

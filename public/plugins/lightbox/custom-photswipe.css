@@ -3,26 +3,32 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 /*Basic*/
+
 .my-gallery img {
   width: 100%;
   height: auto;
 }
+
 .my-gallery figcaption {
   display: none;
 }
 
 /*Advance   */
+
 .demo-gallery {
   width: 100%;
   height: auto;
   float: left;
 }
+
 .demo-gallery a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -41,6 +47,7 @@ a.demo-gallery__img--main {
   padding: 4px;
   border-radius: 8px;
 }
+
 .demo-gallery figure {
   display: none;
 }
@@ -59,10 +66,12 @@ a.demo-gallery__img--main {
   position: relative;
   margin: 0 0 24px;
 }
+
 .share-buttons h2 {
   text-align: center;
   border: 0;
 }
+
 .share-buttons a {
   border-radius: 2px;
   display: inline-block;
@@ -75,6 +84,7 @@ a.demo-gallery__img--main {
   line-height: 22px;
   cursor: pointer;
 }
+
 .share-buttons a:hover {
   opacity: 0.7;
 }
@@ -124,6 +134,7 @@ a.demo-gallery__img--main {
     width: 100%;
   }
 }
+
 @media (max-width: 575px) {
   .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
     width: 100%;

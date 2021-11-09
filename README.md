@@ -57,4 +57,20 @@
 # edit health facility
 - button redirects to a page with the columns for editing the data
   in the past i did this with ajax call and getting the specific health facility with an ID
-  which means this has to go through and api
+  which means this has to go through an api
+
+  ## server login
+  https://my.bluehost.com/web-hosting/cplogin
+
+  UN: owudarko@gmail.com
+  PW: Ananse@xyw!Lehona59
+
+  server user: vyxxgqmy
+  web url: http://doshperl.website
+
+  https://doshperl.website:2083/
+
+  ## cpanel db cred
+  User: vyxxgqmy_vyxxgqm
+  Database: vyxxgqmy_DoshMe
+  PW: Ananse@xyw!Lehona59

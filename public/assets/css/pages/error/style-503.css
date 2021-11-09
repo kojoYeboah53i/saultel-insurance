@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .theme-logo {
   width: 62px;
   height: 62px;
@@ -20,6 +22,7 @@ body.error503 {
   background-attachment: fixed;
   background-size: cover;
 }
+
 body.error503 > .error-content {
   min-height: 80vh;
   display: flex;
@@ -35,10 +38,12 @@ body.error503 > .error-content {
   margin-bottom: 0;
   color: #bfc9d4;
 }
+
 .error503 .img-cartoon {
   width: 170px;
   height: 170px;
 }
+
 .error503 .error-number {
   font-size: 170px;
   color: #fff;
@@ -47,11 +52,13 @@ body.error503 > .error-content {
   margin-top: 15px;
   text-shadow: 0px 5px 4px rgba(31, 45, 61, 0.1019607843);
 }
+
 .error503 .error-text {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
 }
+
 .error503 a.btn {
   width: 134px;
   padding: 6px;
@@ -60,6 +67,7 @@ body.error503 > .error-content {
   border: none;
   letter-spacing: 2px;
 }
+
 .error503 a.btn:hover, .error503 a.btn:not(:disabled):not(.disabled):active {
   background-image: linear-gradient(to right, #1b55e2 0%, #5c1ac3 100%);
 }

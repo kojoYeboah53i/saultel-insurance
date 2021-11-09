@@ -11,7 +11,9 @@
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="/sales" class="nav-link"> Dosh </a>
+                    <a href="/sales" class="nav-link">
+                        {{ Auth::user()->name }}
+                        </a>
                 </li>
             </ul>
 

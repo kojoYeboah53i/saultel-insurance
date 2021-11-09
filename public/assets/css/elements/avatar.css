@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .avatar {
   position: relative;
   display: inline-block;
@@ -27,6 +29,7 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 .avatar .avatar-title {
   display: flex;
   align-items: center;
@@ -40,9 +43,11 @@
 .avatar--group .avatar-xl {
   margin-left: -1.28125rem;
 }
+
 .avatar--group .avatar {
   margin-left: -0.75rem;
 }
+
 .avatar--group img, .avatar--group .avatar .avatar-title {
   border: 2px solid #888ea8;
 }
@@ -68,6 +73,7 @@
 /*
 	Indicators
 */
+
 .avatar-indicators:before {
   content: "";
   position: absolute;
@@ -90,12 +96,15 @@
 .avatar.translateY-axis img, .avatar.translateY-axis .avatar-title {
   transition: all 0.35s ease;
 }
+
 .avatar.translateY-axis img:hover, .avatar.translateY-axis .avatar-title:hover {
   transform: translateY(-5px) scale(1.02);
 }
+
 .avatar.translateX-axis img, .avatar.translateX-axis .avatar-title {
   transition: all 0.35s ease;
 }
+
 .avatar.translateX-axis img:hover, .avatar.translateX-axis .avatar-title:hover {
   transform: translateX(5px) scale(1.02);
 }

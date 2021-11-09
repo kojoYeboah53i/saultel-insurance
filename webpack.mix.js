@@ -175,4 +175,9 @@ mix.sass('resources/sass/assets/structure.scss', 'public/assets/css/')
 //    .sass('resources/sass/plugins/table/datatable/dt-global_style-light.scss', 'public/plugins/table/datatable/')
    
    // Tag Input
-   .sass('resources/sass/plugins/tagInput/tags-input.scss', 'public/plugins/tagInput/');
+   .sass('resources/sass/plugins/tagInput/tags-input.scss', 'public/plugins/tagInput/')
+
+   .postCss("resources/css/tailwind.css", "public/css", [
+
+    require("tailwindcss"),
+   ]);

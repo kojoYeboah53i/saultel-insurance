@@ -1,4 +1,10 @@
 @extends('layouts.app')
+@section('title')
+
+    {{-- <title>{{$post->title}}</title> --}}
+        Service Provider
+
+    @endsection
 
 @section('content')
 <div class=""  style=" display:flex; flex-direction:column; align-items:center; width:80%; text-align: center; margin:auto; padding:50px;">

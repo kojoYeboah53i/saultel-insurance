@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 div#load_screen {
   background: #ecefff;
   opacity: 1;
@@ -19,11 +21,13 @@ div#load_screen {
   right: 0;
   width: 100%;
 }
+
 div#load_screen .loader {
   display: flex;
   justify-content: center;
   height: 100vh;
 }
+
 div#load_screen .loader-content {
   right: 0;
   align-self: center;

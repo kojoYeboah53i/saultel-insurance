@@ -1,0 +1,11 @@
+- ssh-keygen
+
+dude to fix any ssh issues with cpanel
+jux read this webpage and follow the guide, u should get up to speed in less than an hour
+
+https://documentation.cpanel.net/display/CKB/Guide+to+Git+-+Set+Up+Access+to+Private+Repositories
+
+also there's a youtube video on the subject that summarizes everything a 17min video
+
+youtube url
+https://www.youtube.com/watch?v=bj7XvNaYA5U
