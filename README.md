@@ -64,3 +64,13 @@
 
   UN: owudarko@gmail.com
   PW: Ananse@xyw!Lehona59
+
+  server user: vyxxgqmy
+  web url: http://doshperl.website
+
+  https://doshperl.website:2083/
+
+  ## cpanel db cred
+  User: vyxxgqmy_vyxxgqm
+  Database: vyxxgqmy_DoshMe
+  PW: Ananse@xyw!Lehona59
