@@ -9,7 +9,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('PlatFormOwner') }}</title>
+    {{-- <title>{{ config('PlatFormOwner') }}</title> --}}
+    <title>
+        @yield('title')
+    </title>
     <link rel="icon" type="image/x-icon" href="{{asset('storage/img/favicon.ico')}}"/>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
