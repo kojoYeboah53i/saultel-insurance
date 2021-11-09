@@ -1,6 +1,7 @@
 {
     "/assets/css/apps/mailbox.css": "/assets/css/apps/mailbox.css",
     "/assets/css/apps/invoice.css": "/assets/css/apps/invoice.css",
+    "/css/tailwind.css": "/css/tailwind.css",
     "/plugins/tagInput/tags-input.css": "/plugins/tagInput/tags-input.css",
     "/plugins/table/datatable/dt-global_style.css": "/plugins/table/datatable/dt-global_style.css",
     "/plugins/table/datatable/datatables.css": "/plugins/table/datatable/datatables.css",

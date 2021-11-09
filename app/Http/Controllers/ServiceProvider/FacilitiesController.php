@@ -20,6 +20,8 @@ class FacilitiesController extends Controller
     public function getServiceProviders(){
         $facilities = healthFacilities::all()->paginate();
         // dd($facilities);
+        // $request->session()->forget('success');
+
         $data = [
             'category_name' => 'service-providers',
             'page_name' => 'view-service-providers',
@@ -27,8 +29,9 @@ class FacilitiesController extends Controller
             'scrollspy_offset' => '',
     
         ];
+
         return view('serviceProvider.view', compact('facilities'))->with($data);
-        // resources\views\ServiceProvider\view.blade.php
+
     }
 
     // edit facility

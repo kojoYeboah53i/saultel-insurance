@@ -3,26 +3,31 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 /*
 =======================
     Timeline Simple
 =======================
 */
+
 .timeline-simple {
   margin-bottom: 45px;
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
+
 .timeline-simple h3 {
   font-size: 23px;
   font-weight: 600;
 }
+
 .timeline-simple p.timeline-title {
   position: relative;
   font-size: 19px;
@@ -30,6 +35,7 @@
   color: #009688;
   margin-bottom: 28px;
 }
+
 .timeline-simple p.timeline-title:before {
   position: absolute;
   content: "";
@@ -40,25 +46,31 @@
   bottom: -2px;
   left: 15px;
 }
+
 .timeline-simple .timeline-list p.meta-update-day {
   margin-bottom: 24px;
   font-size: 16px;
   font-weight: 600;
   color: #888ea8;
 }
+
 .timeline-simple .timeline-list .timeline-post-content {
   display: flex;
 }
+
 .timeline-simple .timeline-list .timeline-post-content > div > div {
   margin-top: 28px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content:not(:last-child) > div > div {
   margin-bottom: 70px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content div.user-profile {
   position: relative;
   z-index: 2;
 }
+
 .timeline-simple .timeline-list .timeline-post-content div.user-profile:after {
   content: "";
   position: absolute;
@@ -79,6 +91,7 @@
   z-index: -1;
   border-color: #191e3a;
 }
+
 .timeline-simple .timeline-list .timeline-post-content div.user-profile img {
   width: 53px;
   height: 53px;
@@ -86,22 +99,26 @@
   margin-right: 30px;
   box-shadow: 0px 4px 9px 0px rgba(31, 45, 61, 0.31);
 }
+
 .timeline-simple .timeline-list .timeline-post-content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0;
   color: #009688;
 }
+
 .timeline-simple .timeline-list .timeline-post-content svg {
   color: #888ea8;
   vertical-align: text-bottom;
   width: 21px;
   height: 21px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content:hover svg {
   color: #009688;
   fill: rgba(27, 85, 226, 0.2392156863);
 }
+
 .timeline-simple .timeline-list .timeline-post-content h6 {
   display: inline-block;
   font-size: 17px;
@@ -109,9 +126,11 @@
   margin-bottom: 11px;
   color: #d3d3d3;
 }
+
 .timeline-simple .timeline-list .timeline-post-content:hover h6 {
   color: #888ea8;
 }
+
 .timeline-simple .timeline-list .timeline-post-content p.post-text {
   padding-left: 31px;
   color: #888ea8;
@@ -119,9 +138,11 @@
   font-weight: 600;
   margin-bottom: 28px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-contributers {
   padding-left: 31px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-contributers img {
   width: 38px;
   border-radius: 50%;
@@ -131,13 +152,16 @@
   cursor: pointer;
   margin-bottom: 5px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-contributers img:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: none;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-gallery-img {
   padding-left: 31px;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-gallery-img img {
   width: 20%;
   border-radius: 6px;
@@ -145,10 +169,12 @@
   transition: all 0.35s ease;
   cursor: pointer;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-gallery-img img:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: none;
 }
+
 .timeline-simple .timeline-list .timeline-post-content .post-gallery-img img:not(:last-child) {
   margin-right: 23px;
 }
@@ -163,6 +189,7 @@
   padding: 50px 0 50px;
   margin: 0;
 }
+
 .modern-timeline:before {
   position: absolute;
   background: #191e3a;
@@ -173,14 +200,17 @@
   width: 3px;
   margin-left: -1.5px;
 }
+
 .modern-timeline > li {
   margin-bottom: 50px;
   position: relative;
 }
+
 .modern-timeline > li:after, .modern-timeline > li:before {
   display: table;
   content: "";
 }
+
 .modern-timeline > li > .modern-timeline-badge {
   position: absolute;
   background: #1b2e4b;
@@ -194,6 +224,7 @@
   left: 50%;
   top: 32px;
 }
+
 .modern-timeline > li > .modern-timeline-panel {
   position: relative;
   border: 1px solid #191e3a;
@@ -204,6 +235,7 @@
   width: 46%;
   border-radius: 6px;
 }
+
 .modern-timeline > li > .modern-timeline-panel:before {
   position: absolute;
   background: #191e3a;
@@ -215,46 +247,57 @@
   height: 3px;
   display: block;
 }
+
 .modern-timeline > li:nth-child(even) > .modern-timeline-panel:before {
   right: auto;
   left: -37px;
   width: 37px;
 }
+
 .modern-timeline > li:after {
   clear: both;
 }
+
 .modern-timeline > li > .modern-timeline-panel .modern-timeline-preview img {
   width: 100%;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
+
 .modern-timeline > li > .modern-timeline-panel *:last-child {
   margin-bottom: 0;
 }
+
 .modern-timeline > li:nth-child(even) > .modern-timeline-panel {
   border: 1px solid #191e3a;
   float: right;
 }
+
 .modern-timeline > li > .modern-timeline-panel *:last-child {
   margin-bottom: 0;
 }
+
 .modern-timeline > li > .modern-timeline-panel .modern-timeline-body {
   padding: 30px 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
 .modern-timeline > li > .modern-timeline-panel .modern-timeline-body h4 {
   color: #009688;
   margin-bottom: 20px;
   font-size: 1.125rem;
 }
+
 .modern-timeline > li > .modern-timeline-panel .modern-timeline-body p {
   color: #888ea8;
   margin-bottom: 0;
 }
+
 .modern-timeline > li > .modern-timeline-panel .modern-timeline-body p a {
   display: block;
 }
+
 .modern-timeline > li > .modern-timeline-panel *:last-child {
   margin-bottom: 0;
 }
@@ -281,6 +324,7 @@
     float: right;
     width: 100%;
   }
+
   ul.modern-timeline > li > .modern-timeline-badge {
     display: none;
   }
@@ -289,18 +333,22 @@
     display: none;
   }
 }
+
 /*
 =====================
     Modern
 =====================
 */
+
 .timeline-alter .item-timeline {
   display: flex;
 }
+
 .timeline-alter .item-timeline .t-time {
   padding: 10px;
   align-self: center;
 }
+
 .timeline-alter .item-timeline .t-time p {
   margin: 0;
   min-width: 58px;
@@ -310,11 +358,13 @@
   color: #888ea8;
   align-self: center;
 }
+
 .timeline-alter .item-timeline .t-img {
   position: relative;
   border-color: #ebedf2;
   padding: 10px;
 }
+
 .timeline-alter .item-timeline .t-img:before {
   content: "";
   position: absolute;
@@ -328,6 +378,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .timeline-alter .item-timeline .t-img:after {
   content: "";
   position: absolute;
@@ -349,6 +400,7 @@
   border-bottom-width: 0;
   border-radius: 0;
 }
+
 .timeline-alter .item-timeline .t-img img {
   width: 45px;
   height: 45px;
@@ -356,12 +408,14 @@
   z-index: 7;
   position: relative;
 }
+
 .timeline-alter .item-timeline .t-usr-txt {
   display: block;
   padding: 10px;
   position: relative;
   border-color: #ebedf2;
 }
+
 .timeline-alter .item-timeline .t-usr-txt:before {
   content: "";
   position: absolute;
@@ -375,6 +429,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .timeline-alter .item-timeline .t-usr-txt:after {
   content: "";
   position: absolute;
@@ -396,6 +451,7 @@
   border-bottom-width: 0;
   border-radius: 0;
 }
+
 .timeline-alter .item-timeline .t-usr-txt p {
   margin: 0;
   background: #1b55e2;
@@ -412,13 +468,16 @@
   z-index: 7;
   position: relative;
 }
+
 .timeline-alter .item-timeline .t-usr-txt span {
   align-self: center;
 }
+
 .timeline-alter .item-timeline .t-meta-time {
   padding: 10px;
   align-self: center;
 }
+
 .timeline-alter .item-timeline .t-meta-time p {
   margin: 0;
   min-width: 100px;
@@ -427,16 +486,19 @@
   font-weight: 700;
   color: #888ea8;
 }
+
 .timeline-alter .item-timeline .t-text {
   padding: 10px;
   align-self: center;
 }
+
 .timeline-alter .item-timeline .t-text p {
   font-size: 13px;
   margin: 0;
   color: #888ea8;
   font-weight: 600;
 }
+
 .timeline-alter .item-timeline .t-text p a {
   color: #009688;
   font-weight: 600;
@@ -447,12 +509,15 @@
     Basic
 =====================
 */
+
 .timeline-line .item-timeline {
   display: flex;
 }
+
 .timeline-line .item-timeline .t-dot {
   position: relative;
 }
+
 .timeline-line .item-timeline .t-dot:before {
   content: "";
   position: absolute;
@@ -467,6 +532,7 @@
   transform: translateX(-50%);
   border-color: #2196f3;
 }
+
 .timeline-line .item-timeline .t-dot:after {
   content: "";
   position: absolute;
@@ -489,45 +555,59 @@
   border-bottom-width: 0;
   border-radius: 0;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-primary:before {
   border-color: #1b55e2;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-success:before {
   border-color: #8dbf42;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-warning:before {
   border-color: #e2a03f;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-info:before {
   border-color: #2196f3;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-danger:before {
   border-color: #e7515a;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-dark:before {
   border-color: #3b3f5c;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-primary:after {
   border-color: #1b55e2;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-success:after {
   border-color: #8dbf42;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-warning:after {
   border-color: #e2a03f;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-info:after {
   border-color: #2196f3;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-danger:after {
   border-color: #e7515a;
 }
+
 .timeline-line .item-timeline .t-dot.t-dot-dark:after {
   border-color: #3b3f5c;
 }
+
 .timeline-line .item-timeline:last-child .t-dot:after {
   display: none;
 }
+
 .timeline-line .item-timeline .t-meta-time {
   margin: 0;
   min-width: 100px;
@@ -537,21 +617,25 @@
   color: #888ea8;
   align-self: center;
 }
+
 .timeline-line .item-timeline .t-text {
   padding: 10px;
   align-self: center;
   margin-left: 10px;
 }
+
 .timeline-line .item-timeline .t-text p {
   font-size: 13px;
   margin: 0;
   color: #888ea8;
   font-weight: 600;
 }
+
 .timeline-line .item-timeline .t-text p a {
   color: #009688;
   font-weight: 600;
 }
+
 .timeline-line .item-timeline .t-time {
   margin: 0;
   min-width: 58px;
@@ -561,6 +645,7 @@
   color: #888ea8;
   padding: 10px 0;
 }
+
 .timeline-line .item-timeline .t-text .t-meta-time {
   margin: 0;
   min-width: 100px;
@@ -577,11 +662,13 @@
     margin-bottom: 23px;
   }
 }
+
 @media (max-width: 575px) {
   .timeline-alter .item-timeline {
     display: block;
     text-align: center;
   }
+
   .timeline-alter .item-timeline .t-meta-time p, .timeline-alter .item-timeline .t-usr-txt p {
     margin: 0 auto;
   }
@@ -589,16 +676,20 @@
   .timeline-simple .timeline-list .timeline-post-content {
     display: block;
   }
+
   .timeline-simple .timeline-list .timeline-post-content div.user-profile {
     margin-bottom: 18px;
     text-align: center;
   }
+
   .timeline-simple .timeline-list .timeline-post-content div.user-profile:after {
     display: none;
   }
+
   .timeline-simple .timeline-list .timeline-post-content div.user-profile img {
     margin-right: 0;
   }
+
   .timeline-simple .timeline-list .timeline-post-content h4, .timeline-simple .timeline-list .timeline-post-content .meta-time-date {
     text-align: center;
   }

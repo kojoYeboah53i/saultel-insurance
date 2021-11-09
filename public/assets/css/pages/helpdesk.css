@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: #060818;
@@ -27,11 +29,13 @@ body {
   background-attachment: fixed;
   background-size: contain;
 }
+
 .helpdesk .navbar .navbar-brand {
   color: #bfc9d4;
   font-weight: 800;
   letter-spacing: 2px;
 }
+
 .helpdesk .navbar .nav-link {
   color: #bfc9d4 !important;
 }
@@ -41,18 +45,22 @@ body {
     background-image: none;
   }
 }
+
 /*
 	Helpdesk Header Wrapper
 */
+
 .hd-header-wrapper {
   padding: 67px 0;
   border-radius: 4px;
 }
+
 .hd-header-wrapper h4 {
   color: #bfc9d4;
   font-size: 46px;
   padding: 0 8px;
 }
+
 .hd-header-wrapper p {
   color: #bfc9d4;
   font-size: 17px;
@@ -60,6 +68,7 @@ body {
   letter-spacing: 1px;
   margin-bottom: 35px;
 }
+
 .hd-header-wrapper span.input-group-text {
   background-color: #fff;
   border-color: #fff;
@@ -68,20 +77,24 @@ body {
   font-size: 22px;
   font-weight: normal !important;
 }
+
 .hd-header-wrapper span.input-group-text svg {
   font-weight: 600;
   color: #0e1726;
 }
+
 .hd-header-wrapper .input-group:hover span.input-group-text svg {
   color: #009688;
   fill: rgba(0, 150, 136, 0.2705882353);
 }
+
 .hd-header-wrapper .form-control:focus {
   box-shadow: none;
   border-color: #1b2e4b;
   color: #888ea8;
   background: #1b2e4b;
 }
+
 .hd-header-wrapper input {
   border: none;
   border-radius: 4px;
@@ -99,7 +112,9 @@ body {
 /*
 	Tab Section
 */
+
 /* 	Tab Content 	*/
+
 .hd-tab-section .accordion .card {
   border: none;
   margin-bottom: 26px;
@@ -108,6 +123,7 @@ body {
   cursor: pointer;
   background-color: #0e1726;
 }
+
 .hd-tab-section .accordion .card .card-header {
   background-color: #0e1726;
   color: #888ea8;
@@ -115,6 +131,7 @@ body {
   padding: 0;
   border-radius: 6px;
 }
+
 .hd-tab-section .accordion .card .card-header div > div {
   padding: 13px 21px;
   cursor: pointer;
@@ -126,24 +143,30 @@ body {
   color: #888ea8;
   font-weight: 600;
 }
+
 .hd-tab-section .accordion .card .card-header div > div svg {
   width: 17px;
   vertical-align: middle;
   margin-right: 11px;
   color: #888ea8;
 }
+
 .hd-tab-section .accordion .card .card-header div > div[aria-expanded=true] svg {
   color: #009688;
 }
+
 .hd-tab-section .accordion .card:hover .card-header div > div svg {
   color: #009688;
 }
+
 .hd-tab-section .accordion .card:not(:last-child) .card-header div > div {
   border-bottom: none;
 }
+
 .hd-tab-section .accordion .card .card-body {
   padding: 20px 30px;
 }
+
 .hd-tab-section .accordion .card .card-body p {
   line-height: 2.2;
   font-size: 14px;
@@ -152,9 +175,11 @@ body {
 }
 
 /*  Contact Content     */
+
 .hd-contact-section {
   margin-bottom: 50px;
 }
+
 .hd-contact-section .hd-slide-header {
   text-align: center;
   font-size: 24px;
@@ -176,6 +201,7 @@ body {
 }
 
 /*  Community help     */
+
 .hd-contact-section .community-help .media {
   padding: 13px 25px;
   border: 1px solid #0e1726;
@@ -183,6 +209,7 @@ body {
   background: #0e1726;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
+
 .hd-contact-section .community-help .media svg {
   width: 54px;
   height: 55px;
@@ -191,17 +218,20 @@ body {
   color: #bfc9d4;
   stroke-width: 1.5px;
 }
+
 .hd-contact-section .community-help .media h5 {
   color: #bfc9d4;
   font-weight: 800;
   font-size: 17px;
   margin-bottom: 5px;
 }
+
 .hd-contact-section .community-help .media p {
   font-size: 14px;
   font-weight: 600;
   color: #888ea8;
 }
+
 .hd-contact-section .news-updates .media {
   padding: 13px 25px;
   border: 1px solid #0e1726;
@@ -209,6 +239,7 @@ body {
   background: #0e1726;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
+
 .hd-contact-section .news-updates .media svg {
   width: 54px;
   height: 55px;
@@ -216,11 +247,13 @@ body {
   color: #bfc9d4;
   stroke-width: 1.5px;
 }
+
 .hd-contact-section .news-updates .media h5 {
   color: #bfc9d4;
   font-weight: 800;
   margin-bottom: 0;
 }
+
 .hd-contact-section .news-updates .media p {
   font-size: 14px;
   font-weight: 600;
@@ -228,13 +261,16 @@ body {
 }
 
 /*  News updates     */
+
 /*  Carousel indicators    */
+
 .carousel-indicators {
   bottom: -13px;
   left: 0;
   right: 0;
   height: 22px;
 }
+
 .carousel-indicators li {
   width: 6px;
   height: 6px;
@@ -242,6 +278,7 @@ body {
   opacity: 1;
   background-color: #506690;
 }
+
 .carousel-indicators li.active {
   background-color: #888ea8;
 }
@@ -260,6 +297,7 @@ body {
   position: relative;
   border-radius: 50px;
 }
+
 .carousel-control-prev-icon svg {
   color: #bfc9d4;
   position: absolute;
@@ -270,6 +308,7 @@ body {
   margin-right: auto;
   width: 23px;
 }
+
 .carousel-control-prev-icon:before {
   display: none;
 }
@@ -283,6 +322,7 @@ body {
   position: relative;
   border-radius: 50px;
 }
+
 .carousel-control-next-icon svg {
   color: #bfc9d4;
   position: absolute;
@@ -293,6 +333,7 @@ body {
   margin-right: auto;
   width: 23px;
 }
+
 .carousel-control-next-icon:before {
   display: none;
 }
@@ -300,6 +341,7 @@ body {
 /*
     Mini Footer Wrapper
 */
+
 #miniFooterWrapper {
   color: #fff;
   font-size: 14px;
@@ -307,9 +349,11 @@ body {
   padding: 14px;
   box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
 }
+
 #miniFooterWrapper p {
   color: #888ea8;
 }
+
 #miniFooterWrapper .arrow {
   background-color: #0e1726;
   border-radius: 50%;
@@ -325,6 +369,7 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+
 #miniFooterWrapper .arrow p {
   align-self: center;
   margin-bottom: 0;
@@ -333,6 +378,7 @@ body {
   font-size: 15px;
   letter-spacing: 1px;
 }
+
 #miniFooterWrapper .copyright a {
   color: #009688;
   font-weight: 700;
@@ -344,16 +390,19 @@ body {
     background: transparent;
   }
 }
+
 @media (max-width: 991px) {
   .carousel-control-next, .carousel-control-prev {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .hd-contact-section .community-help .media {
     margin-bottom: 3px;
   }
 }
+
 @media (max-width: 575px) {
   .carousel-item-content {
     height: auto;

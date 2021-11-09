@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .popovers-section h6 {
   color: #3b3f5c;
   font-size: 0.875rem;
@@ -19,11 +21,13 @@
   border: 1px solid #060818;
   border-radius: 4px;
 }
+
 .popover .popover-header {
   border-radius: 0;
   background-color: #060818;
   color: #bfc9d4;
 }
+
 .popover .popover-body {
   background-color: #060818;
   color: #bfc9d4;
@@ -32,11 +36,13 @@
 /*
 	Popovers
 */
+
 .popover-primary, .popover-success, .popover-info, .popover-danger, .popover-warning, .popover-secondary, .popover-dark {
   border-color: #060818;
 }
 
 /* 		popover Arrow 	*/
+
 .bs-popover-top.popover .arrow:after, .bs-popover-top.popover .arrow:before {
   border-top-color: #060818;
 }
@@ -82,6 +88,7 @@
 }
 
 /* 		popover Header 		*/
+
 .popover-primary .popover-header {
   background-color: #060818;
   border: none;
@@ -125,6 +132,7 @@
 }
 
 /*  	Popover Body 	*/
+
 .popover-primary .popover-body {
   background-color: #060818;
   color: #1b55e2;

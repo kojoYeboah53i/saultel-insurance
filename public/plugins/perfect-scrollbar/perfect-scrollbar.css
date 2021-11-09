@@ -3,14 +3,17 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 /*
  * Container style
  */
+
 .ps {
   overflow: hidden !important;
   overflow-anchor: none;
@@ -22,6 +25,7 @@
 /*
  * Scrollbar rail styles
  */
+
 .ps__rail-x {
   display: none;
   opacity: 0;
@@ -71,6 +75,7 @@
 /*
  * Scrollbar thumb styles
  */
+
 .ps__thumb-x {
   background-color: #888ea8;
   border-radius: 6px;
@@ -106,11 +111,13 @@
 }
 
 /* MS supports */
+
 @supports (-ms-overflow-style: none) {
   .ps {
     overflow: auto !important;
   }
 }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .ps {
     overflow: auto !important;

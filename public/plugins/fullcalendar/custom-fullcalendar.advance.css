@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .ps--active-y > .ps__rail-y {
   z-index: 20;
 }
@@ -43,6 +45,7 @@
   display: none;
   border-top-color: #1b55e2;
 }
+
 .popover-primary .popover-header {
   background-color: #060818;
   border-color: #060818;
@@ -54,6 +57,7 @@
   letter-spacing: 1px;
   font-weight: 400;
 }
+
 .popover-primary .popover-body {
   color: #bfc9d4;
   min-height: 90px;
@@ -82,6 +86,7 @@
   color: #bfc9d4;
   cursor: pointer;
 }
+
 .labels .label:before {
   content: "";
   position: absolute;
@@ -93,15 +98,19 @@
   height: 10px;
   width: 10px;
 }
+
 .labels .label.label-primary:before {
   background: #1b55e2;
 }
+
 .labels .label.label-warning:before {
   background: #e2a03f;
 }
+
 .labels .label.label-success:before {
   background: #8dbf42;
 }
+
 .labels .label.label-danger:before {
   background: #e7515a;
 }
@@ -135,9 +144,11 @@ button.fc-month-button, button.fc-agendaWeek-button, button.fc-agendaDay-button 
   letter-spacing: 1px;
   color: #e0e6ed;
 }
+
 button.fc-prev-button, button.fc-next-button {
   padding: 6px 10px;
 }
+
 button.fc-today-button {
   border: 1px solid #1b2e4b;
   border-radius: 6px !important;
@@ -182,6 +193,7 @@ a.bg-primary:hover, a.bg-success:hover, a.bg-warning:hover, a.bg-danger:hover {
   position: relative;
   height: calc(100vh - 362px) !important;
 }
+
 .fc-scroller.fc-time-grid-container {
   height: calc(100vh - 408px) !important;
 }
@@ -193,30 +205,37 @@ a.bg-primary:hover, a.bg-success:hover, a.bg-warning:hover, a.bg-danger:hover {
 /*
     Modal
 */
+
 #addEventsModal {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 #addEventsModal .modal-content {
   border: none;
 }
+
 #addEventsModal .modal-body {
   padding: 25px 38px;
 }
+
 #addEventsModal .modal-body .close {
   cursor: pointer;
   color: #bfc9d4;
   text-shadow: none;
 }
+
 #addEventsModal .modal-title {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0px;
   color: #bfc9d4;
 }
+
 #addEventsModal form {
   margin-top: 30px;
 }
+
 #addEventsModal form input[readonly] {
   background: #1b2e4b !important;
 }
@@ -231,18 +250,22 @@ a.bg-primary:hover, a.bg-success:hover, a.bg-warning:hover, a.bg-danger:hover {
   font-weight: 600;
   color: #acb0c3;
 }
+
 #addEventsModal form .event-badge {
   margin-top: 16px;
 }
+
 #addEventsModal form .event-badge p {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
   color: #acb0c3;
 }
+
 #addEventsModal form input {
   margin-bottom: 25px;
 }
+
 #addEventsModal form .form-group {
   margin-bottom: 0;
 }
@@ -267,6 +290,7 @@ input[readonly] {
 #addEventsModal .modal-footer .btn {
   box-shadow: none;
 }
+
 #addEventsModal .modal-footer #add-e {
   background-color: #1b55e2;
   color: #fff;
@@ -274,6 +298,7 @@ input[readonly] {
   border: 1px solid #1b55e2;
   padding: 10px 25px;
 }
+
 #addEventsModal .modal-footer #edit-event {
   background-color: #009688;
   color: #fff;
@@ -281,6 +306,7 @@ input[readonly] {
   border: 1px solid #009688;
   padding: 10px 25px;
 }
+
 #addEventsModal .modal-footer [data-dismiss=modal] {
   background-color: #1b2e4b;
   color: #bfc9d4;
@@ -308,15 +334,19 @@ td.fc-today.fc-state-highlight span {
   top: 4px;
   border-radius: 50%;
 }
+
 .fc-day-grid-event.bg-primary .fc-content:before {
   background: #1b55e2;
 }
+
 .fc-day-grid-event.bg-success .fc-content:before {
   background: #8dbf42;
 }
+
 .fc-day-grid-event.bg-warning .fc-content:before {
   background: #e2a03f;
 }
+
 .fc-day-grid-event.bg-danger .fc-content:before {
   background: #e7515a;
 }
@@ -332,18 +362,22 @@ td.fc-today.fc-state-highlight span {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -353,6 +387,7 @@ td.fc-today.fc-state-highlight span {
   #calendar {
     height: auto !important;
   }
+
   #calendar .fc-event {
     margin: 0;
   }
@@ -381,6 +416,7 @@ td.fc-today.fc-state-highlight span {
     float: none;
     margin: 0 0 30px 0;
   }
+
   .fc-toolbar .fc-center {
     margin: 0 0 30px 0;
   }

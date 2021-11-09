@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 svg {
   touch-action: none;
 }
@@ -104,6 +106,7 @@ svg {
   margin: 0 10px 10px 0;
   padding: 3px 3px 1px 3px;
 }
+
 .jvectormap-legend-cnt-h .jvectormap-legend .jvectormap-legend-tick {
   float: left;
 }
@@ -116,6 +119,7 @@ svg {
 .jvectormap-legend-cnt-h .jvectormap-legend-tick {
   width: 40px;
 }
+
 .jvectormap-legend-cnt-h .jvectormap-legend-tick-sample {
   height: 15px;
 }

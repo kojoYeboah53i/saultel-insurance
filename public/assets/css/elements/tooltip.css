@@ -3,11 +3,13 @@
 			@Import	Function
 	===============================
 */
+
 /*
 	===============================
 			@Import	Mixins
 	===============================
 */
+
 .tooltip-inner {
   border-radius: 6px;
 }
@@ -33,10 +35,13 @@
 		Colors
 	=================
 */
+
 /*
 	Tooltips
 */
+
 /*		Tooltip Inner 	*/
+
 .tooltip-primary .tooltip-inner {
   color: #1b55e2;
   background-color: #060818;
@@ -73,15 +78,19 @@
 }
 
 /*		Tooltip arrow 		*/
+
 .tooltip.bs-tooltip-top .arrow:before {
   border-top-color: #060818;
 }
+
 .tooltip.bs-tooltip-bottom .arrow:before {
   border-bottom-color: #060818;
 }
+
 .tooltip.bs-tooltip-left .arrow:before {
   border-left-color: #060818;
 }
+
 .tooltip.bs-tooltip-right .arrow:before {
   border-right-color: #060818;
 }
