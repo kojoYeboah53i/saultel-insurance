@@ -30,7 +30,7 @@ class FacilitiesController extends Controller
     
         ];
 
-        return view('serviceProvider.view', compact('facilities'))->with($data);
+        return \View::make('serviceProvider.view', compact('facilities'))->with($data);
 
     }
 
@@ -52,7 +52,7 @@ class FacilitiesController extends Controller
     
         ];
 
-        return view('serviceProvider.view', compact('facilities'))->with($data);
+        return \View::make('serviceProvider.view', compact('facilities'))->with($data);
     }
 
     //delete facility
@@ -78,7 +78,7 @@ class FacilitiesController extends Controller
 
         $facility= healthFacilities::findOrFail($id);
 
-        return view('serviceProvider.edit', compact('facility'))->with($data);
+        return \View::make('serviceProvider.edit', compact('facility'))->with($data);
 
     }
         

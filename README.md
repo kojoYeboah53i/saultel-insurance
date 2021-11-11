@@ -66,6 +66,7 @@
   PW: Ananse@xyw!Lehona59
 
   server user: vyxxgqmy
+  server ip: 162.144.129.213
   web url: http://doshperl.website
 
   https://doshperl.website:2083/
