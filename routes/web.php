@@ -1426,3 +1426,16 @@ Route::get('edit-facility', function(){
     ];
 return view('serviceProvider.edit')->with($data);
 })->name('edit.facility');
+
+
+
+Route::get('/admin',  function(){
+    $data = [
+        'category_name' => 'pages',
+        'page_name' => 'admin',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('admin.admin')->with($data);
+})->name('admin');
+
