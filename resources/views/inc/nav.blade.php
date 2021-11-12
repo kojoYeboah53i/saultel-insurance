@@ -2,8 +2,18 @@
     <!-- left -->
     <div class="flex items-center">
        <div class="flex items-center">
-           <img src="assets/img/app-logo.png" alt="" class="w-60">
-       </div>
+           @if( $user->role_id == 1 || $user->role_id == 2 )
+                <a href="/" class="text-white text-2xl font-bold">
+                <img src="assets/img/app-logo.png" alt="" class="w-60">
+                </a>
+         @endif
+         @if( $user->role_id == 3 )
+           <a href="/" class="text-white text-2xl font-bold">
+           <img src="assets/img/nyaho.jpg" alt="" class="w-60">
+           </a>
+         @endif
+        </div>
+
    </div>
 
        <!-- right -->
@@ -34,9 +44,20 @@
            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Your Profile</a>
            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Settings</a>
-           <form method="POST" action="#" role="none">
-             <button type="submit" class="text-gray-700 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">
-               Sign out
+           <form method="POST" action="{{ route('logout') }}
+           
+           " role="none" class="" id="logout-form">
+              @csrf
+             <button type="submit" class="text-gray-700 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3
+             " onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+             >
+              
+                <div class="flex justify-between">
+                    Sign Out
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> 
+                
+
+                </div>
              </button>
            </form>
          </div>
@@ -44,3 +65,4 @@
      </div>
 </div>
 <div class="h-10 w-full navshade"></div>
+

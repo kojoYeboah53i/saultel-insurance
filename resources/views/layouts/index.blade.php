@@ -53,6 +53,8 @@
             background-color: #f5f5f5;
         }
     </style>
+    @include('inc.scripts')
+
 
     <script>
         const user = document.querySelector('.admin');
@@ -64,13 +66,13 @@
     });
 
  
-     user.onmouseout = function() {
-        menucontent.classList.add('hidden');
-     }
+    //  user.onmouseout = function() {
+    //     menucontent.classList.add('hidden');
+    //  }
 
-     user.onmouseover = function() {
-        menucontent.classList.remove('hidden');
-     }
+    //  user.onmouseover = function() {
+    //     menucontent.classList.remove('hidden');
+    //  }
     </script>
 
 </body>

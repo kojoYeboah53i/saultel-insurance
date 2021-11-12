@@ -5,6 +5,7 @@ use App\Http\Controllers\Excel\ExportController;
 use App\Http\Controllers\Excel\ImportController;
 use App\Http\Controllers\ServiceProvider\FacilitiesController;
 use App\Http\Controllers\ServiceProvider\healthFacility;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,17 +39,10 @@ Route::group(['middleware' => 'auth'] , function() {
         return view('dashboard2')->with($data);
     });
     
-    Route::get('/sales', function() {
-        // $category_name = '';
-        $data = [
-            'category_name' => 'dashboard',
-            'page_name' => 'sales',
-            'has_scrollspy' => 0,
-            'scrollspy_offset' => '',
-        ];
-        // $pageName = 'sales';
-        return view('dashboard')->with($data);
-    });
+    Route::get('/sales',  [PagesController::class, 'index']);
+    
+    
+
 
 
     // APPS
@@ -1312,7 +1306,7 @@ Route::group(['middleware' => 'auth'] , function() {
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/register', function() {
     return redirect('/login');    
@@ -1436,6 +1430,6 @@ Route::get('/admin',  function(){
         'has_scrollspy' => 0,
         'scrollspy_offset' => '',
     ];
-    return view('admin.admin')->with($data);
+    return view('admin.index')->with($data);
 })->name('admin');
 
