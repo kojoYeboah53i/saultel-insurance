@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Partner;
+use App\Models\Subscriber;
 
 use Illuminate\Http\Request;
 
@@ -66,9 +68,28 @@ class PagesController extends Controller
                 'scrollspy_offset' => '',
             ];
             $partners = User::where('role_id', 2)->get();
-            return view('partner.admin', compact('user', 'partners'))->with($data);
+            // $subscribers = Subscriber::all();//where('partner_id', 1)->get();
+             $subscribers = Subscriber::where('partner_id', 1)->count();//->subscribers()->get();
+             $part = Partner::findOrFail(1)->subscriber();//where('partner_id', 1)->count();//->subscribers()->get();
+            return view('partner.admin', compact('user', 'part', 'partners', 'subscribers'))->with($data);
         }
+        else redirect('/login');
 
+    }
+
+    public function createPartner(){
+        $user = auth()->user();
+
+        if(auth()->user()->role_id == 1){
+            $data = [
+                'category_name' => 'partner',
+                'page_name' => ' create partner',
+                'has_scrollspy' => 0,
+                'scrollspy_offset' => '',
+            ];
+            return view('partner.create', compact('user'))->with($data);
+        }
+        else redirect('/login');
     }
      public function login()
      {

@@ -21,7 +21,7 @@
                                                 <div class="overflow-auto lg:overflow-visible ">
                                                     <header class="flex  items-center justify-between mx-auto py-4 px-6">
                                                         <h1 class="text-3xl font-bond">Partners</h1>
-                                                        <a href="#" type="button" class="text-xl font-bond text-white bg-indigo-600 hover:bg-indigo-900 py-2 px-4 rounded-xl"> Add Partner</a>
+                                                        <a href="/create/partners" type="button" class="text-xl font-bond text-white bg-indigo-600 hover:bg-indigo-900 py-2 px-4 rounded-xl"> Add Partner</a>
 
                                                     </header>
                                                  @if(!empty($partners[0]))  
@@ -37,18 +37,20 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
+                                                     @foreach( $partners as $key=>$partner) 
+
                                                             <tr class="bg-gray-800">
                                                                 <td class="p-3">
                                                                     <div class="flex align-items-center">
                                                                         <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
                                                                         <div class="ml-3">
-                                                                            <div class="">Appple</div>
-                                                                            <div class="text-gray-500">mail@rgmail.com</div>
+                                                                            <div class="">{{ $partner->name }}</div>
+                                                                            <div class="text-gray-500">{{ $partner->email }}</div>
                                                                         </div>
                                                                     </div>
                                                                 </td>
                                                                 <td class="p-3">
-                                                                    7,000
+                                                                    {{ $subscribers }}
                                                                 </td>
                                                                 <td class="p-3 font-bold">
                                                                     200.00$
@@ -68,14 +70,16 @@
                                                                     </a>
                                                                 </td>
                                                             </tr>
-                                                        
-                                                            <tr class="bg-gray-800">
+                                                        @endforeach
+                                                         @foreach( $part as $key=>$parts) 
+                                                          
+                                                        <tr class="bg-gray-800">
                                                                 <td class="p-3">
                                                                     <div class="flex align-items-center">
                                                                         <img class="rounded-full h-12 w-12   object-cover" src="https://images.unsplash.com/photo-1600856209923-34372e319a5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2135&q=80" alt="unsplash image">
                                                                         <div class="ml-3">
-                                                                            <div class="">Samsung</div>
-                                                                            <div class="text-gray-500">mail@rgmail.com</div>
+                                                                            <div class="">{{ $parts->name }}</div>
+                                                                            <div class="text-gray-500">{{ $parts->email }}</div>
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -100,6 +104,7 @@
                                                                     </a>
                                                                 </td>
                                                             </tr>
+                                                            @endforeach
                                                         </tbody>
                                                     </table>
                                                     @endif

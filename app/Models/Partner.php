@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Partner extends Model
 {
     use HasFactory;
+    protected $table = 'partner';
+    protected $primaryKey = 'id';
+    protected $fillable = ['name', 'email', 'password'];
+
+    public function subscriber(){
+        return $this->hasMany('App\Models\Subscriber');
+    }
 }
