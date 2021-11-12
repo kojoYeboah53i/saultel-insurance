@@ -24,6 +24,8 @@
                                                         <a href="#" type="button" class="text-xl font-bond text-white bg-indigo-600 hover:bg-indigo-900 py-2 px-4 rounded-xl"> Add Partner</a>
 
                                                     </header>
+                                                 @if(!empty($partners[0]))  
+
                                                     <table class="table text-gray-400 border-separate space-y-6 text-sm">
                                                         <thead class="bg-gray-800 text-gray-500">
                                                             <tr>
@@ -100,6 +102,7 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>

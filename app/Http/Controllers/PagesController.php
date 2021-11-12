@@ -65,8 +65,8 @@ class PagesController extends Controller
                 'has_scrollspy' => 0,
                 'scrollspy_offset' => '',
             ];
-            $partner = User::where('role_id', 2)->get();
-            return view('partner.admin', compact('user', 'partner'))->with($data);
+            $partners = User::where('role_id', 2)->get();
+            return view('partner.admin', compact('user', 'partners'))->with($data);
         }
 
     }
