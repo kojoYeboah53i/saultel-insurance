@@ -29,7 +29,9 @@
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
     <!--  END LOADER -->
-    @include('inc.nav')
+        <div class="fixed">
+            @include('inc.nav')
+        </div>
       
     
         <!--  BEGIN MAIN CONTAINER  -->

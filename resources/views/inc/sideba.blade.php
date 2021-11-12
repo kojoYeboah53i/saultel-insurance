@@ -1,13 +1,13 @@
 <div class=" sidebar-slim transition ease-in duration-150 h-screen fixed top-40 bg-black flex-col items-center py-2 px-4 ">
 
-    <nav class="slim hidden">
+    <nav class="slim ">
         <ul class="list-reset">
             <li class="py-4" onclick="menu_full()">
                 <a href="#" class="text-white">
                     <i class="fas fa-bars fa-2x"></i>
                 </a>
             </li>
-           @if( $user->role_id == 1 || $user->role_id == 2 )
+           @if( $user->role_id == 1  )
 
             <li class="py-4">
                 <a href="superadmin.html" class="text-white">
@@ -31,48 +31,69 @@
                 </a>
             </li>
             <li class="py-4">
-                <a href="superadmin.html" class="text-white">
+                <a href="#" class="text-white" onclick="signout()">
                     <i class="fas fa-sign-out-alt fa-2x"></i>
                 </a>
+                <form method="POST" action="{{ route('logout') }}" id="logout-form" class="d-none">
+                    @csrf
+                    <button type="submit" id="logout-form" class="submit">submit</button>
+                </form>
+
             </li>
         </ul>
      </nav>
 </div>
 
-<div class=" sidebar-full transition ease-in duration-150 h-screen fixed top-40 bg-black flex-col items-center py-2 px-4 ">
+<div class=" sidebar-full  hidden transition ease-in duration-150 h-screen fixed top-40 bg-black flex-col items-center py-2 px-4 ">
 
      <nav class="nav justify-content-center  ">
         <ul class="list-reset">
             <li class="py-4" onclick="menu_slim()">
-                <a href="#" class="text-white">
+                <a href="#" class="text-white flex justify-end items-end w-40">
                     <i class="fas fa-times fa-2x"></i>
                 </a>
             </li>
-           @if( $user->role_id == 1 || $user->role_id == 2 )
-
-            <li class="py-4">
-                <a href="superadmin.html" class="text-white">
-                     <i class="fas fa-user-circle fa-2x"></i>
-                </a>
-            </li>
-            @endif
-            <li class="py-4">
-                <a href="superadmin.html" class="text-white">
-                   <div></div>
-                </a>
-            </li>
-            <li class="py-4">
-                <a href="superadmin.html" class="text-white">
+            <li class="py-4 flex items-center">
+                <a href="superadmin.html" class="text-white flex justify-between items-center w-40">
+                    <span class="text-2xl mx-auto"> Analytics</span>
                     <i class="fas fa-chart-line fa-2x"></i>
                 </a>
             </li>
-            <li class="py-4">
-                <a href="superadmin.html" class="text-white">
+           @if( $user->role_id == 1  )
+
+            <li class="py-4 flex items-center">
+                <a href="/partners" class="text-white flex justify-between items-center w-40">
+                    <span class=" text-2xl mx-auto flex justify-start">Partners</span>
+                    <i class="fas fa-user-circle fa-2x"></i>
+                </a>
+            </li>
+            <li class="py-4 flex items-center">
+                <a href="/service-providers" class="text-white flex justify-between items-center w-40">
+                    <span class=" text-2xl mx-auto flex justify-start">Service Providers</span>
+                    <i class="fas fa-user-circle fa-2x"></i>
+                </a>
+            </li>
+            @endif
+            <li class="py-4 w-full  flex items-center">
+                <a href="superadmin.html" class="text-white  flex justify-between items-center w-40">
+                        <span class=" text-2xl mx-auto">Users</span>
+                        
+                        <span class="flex items-end">
+                         <i class="fas fa-users fa-2x"></i>
+
+                        </span>
+                </a>
+            </li>
+
+            <li class="py-4 flex items-center">
+                <a href="superadmin.html" class="text-white flex justify-between items-center w-40">
+                    <span class="text-2xl mx-auto"> Settings</span>
                     <i class="fas fa-cog fa-2x"></i>
                 </a>
             </li>
             <li class="py-4">
-                <a href="superadmin.html" class="text-white">
+                <a href="superadmin.html" class="text-white flex justify-between items-center w-40">
+                    <span class="text-2xl mx-auto"> Logout</span>
                     <i class="fas fa-sign-out-alt fa-2x"></i>
                 </a>
             </li>
@@ -87,14 +108,30 @@
     .sidebar-slim {
     }
     .sidebar-full {
-        width: 17rem;
+        width: 15rem;
         background: black;
+        transition: ease .8s all;
     }
+ 
 </style>
 <script>
     function menu_full() {
-        var x = document.getElementById("sidebar");
-        alert("menu full")
+        full = document.querySelector(".sidebar-full");
+        slim = document.querySelector(".sidebar-slim");
+        slim.classList.add("hidden");
+        full.classList.remove("hidden");
+        full.style.transform = "translateX(-1%)";
       
     }
+    function menu_slim() {
+        full = document.querySelector(".sidebar-full");
+        slim = document.querySelector(".sidebar-slim");
+        slim.classList.remove("hidden");
+        full.style.transform = "translateX(-100%)";
+    }
+
+    function signout() {
+        document.getElementById('logout-form').submit();
+    }
+    
 </script>

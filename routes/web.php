@@ -1433,3 +1433,7 @@ Route::get('/admin',  function(){
     return view('admin.index')->with($data);
 })->name('admin');
 
+
+Route::get('/partners',  [PagesController::class, 'partners'])->name('partners.admin');
+
+

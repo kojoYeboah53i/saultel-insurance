@@ -55,7 +55,21 @@ class PagesController extends Controller
     }
 
 
+    public function partners(){
+        $user = auth()->user();
 
+        if(auth()->user()->role_id == 1){
+            $data = [
+                'category_name' => 'partner',
+                'page_name' => 'partner',
+                'has_scrollspy' => 0,
+                'scrollspy_offset' => '',
+            ];
+            $partner = User::where('role_id', 2)->get();
+            return view('partner.admin', compact('user', 'partner'))->with($data);
+        }
+
+    }
      public function login()
      {
         return view('auth.login');
