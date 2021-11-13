@@ -64,7 +64,7 @@
                             <a href="/addPartner"> Add Partner </a>
                         </li>
                         <li class="{{ ($page_name === 'viewPartners') ? 'active' : '' }}">
-                            <a href="/viewPartners"> View Partners </a>
+                            <a href="/partners"> View Partners </a>
                         </li>
                         
     
