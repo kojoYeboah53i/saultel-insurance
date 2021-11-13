@@ -10,7 +10,7 @@ class Partner extends Model
     use HasFactory;
     protected $table = 'partner';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['name', 'email', 'phone', 'address'];
 
     public function subscriber(){
         return $this->hasMany('App\Models\Subscriber');

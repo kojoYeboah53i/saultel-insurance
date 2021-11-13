@@ -1436,5 +1436,6 @@ Route::get('/admin',  function(){
 
 Route::get('/partners',  [PagesController::class, 'partners'])->name('partners.admin');
 Route::get('/create/partners',  [PagesController::class, 'createPartner'])->name('partners.create');
+Route::post('/create/partners',  [PagesController::class, 'createPartners'])->name('create.partner');
 
 

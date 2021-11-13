@@ -28,12 +28,12 @@ class PagesController extends Controller
 
         if (auth()->user()->role_id == 1) {
             $data = [
-                'category_name' => 'pages',
-                'page_name' => 'admin',
+                'category_name' => 'sales',
+                'page_name' => 'sales',
                 'has_scrollspy' => 0,
                 'scrollspy_offset' => '',
             ];
-            return view('admin.index', compact('user'))->with($data);
+            return view('dashboard', compact('user'))->with($data);
         } 
         if (auth()->user()->role_id == 2) {
             $data = [
@@ -88,6 +88,23 @@ class PagesController extends Controller
                 'scrollspy_offset' => '',
             ];
             return view('partner.create', compact('user'))->with($data);
+        }
+        else redirect('/login');
+    }
+    
+    public function createPartners(Request $request){
+        $user = auth()->user();
+
+        if(auth()->user()->role_id == 1){
+
+            dd($request->all());
+            $data = [
+                'category_name' => 'partner',
+                'page_name' => ' create partner',
+                'has_scrollspy' => 0,
+                'scrollspy_offset' => '',
+            ];
+            return view('partner.admin', compact('user'))->with($data);
         }
         else redirect('/login');
     }

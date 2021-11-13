@@ -4,12 +4,12 @@
        <div class="flex items-center">
            @if( $user->role_id == 1 || $user->role_id == 2 )
                 <a href="/" class="text-white text-2xl font-bold">
-                <img src="assets/img/app-logo.png" alt="" class="w-60">
+                <img src="{{ asset('assets/img/app-logo.png') }}" alt="" class="w-60">
                 </a>
          @endif
          @if( $user->role_id == 3 )
            <a href="/" class="text-white text-2xl font-bold">
-           <img src="assets/img/nyaho.jpg" alt="" class="w-60">
+           <img src="{{ asset('assets/img/nyaho.jpg') }}" alt="" class="w-60">
            </a>
          @endif
         </div>

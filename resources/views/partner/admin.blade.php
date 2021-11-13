@@ -126,7 +126,7 @@
     <style>
      
         .navshade {
-            background-image: url('assets/img/navshade.png');
+            background-image: url("{{asset('assets/img/navshade.png')}}");
             background-repeat: no-repeat;
             width: 100vw;
             height: 2.2rem;
