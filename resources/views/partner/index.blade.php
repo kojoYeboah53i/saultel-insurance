@@ -2,7 +2,6 @@
 @extends('layouts.index')
 
 @section('content')
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <div class="min-h-full">
 
@@ -74,63 +73,10 @@
         </div>
 
 
-    <style>
-     
-        .navshade {
-            background-image: url('assets/img/navshade.png');
-            background-repeat: no-repeat;
-            width: 100vw;
-            height: 2.2rem;
-            background-size: 100% 100%;
-            z-index: 1;
-        }
-        .sidebar-slim{
-            width: 5rem;
-        }
-        .sidebar{
-            width: 18rem;
-            transition: all 0.8s ease;
-        }
-        .dashboard{
-            width: 92%;
-            transition: all 0.8s ease;
-        }
-        .main-container{
-            display: block;
-            left: 6%;
-            padding: 10px;
-        }
-        .quick-action{
-            background-image: linear-gradient(120deg, #d8e07f, #7e6b1d);
-            border-radius: 25px;
-        }
-        *{
-            font-size: small;
-        }
-        [x-cloak] {
-        display: none;
-      }
   
-      .line {
-        background: repeating-linear-gradient(
-          to bottom,
-          #eee,
-          #eee 1px,
-          #fff 1px,
-          #fff 8%
-        );
-      }
-      .tick {
-        background: repeating-linear-gradient(
-          to right,
-          #eee,
-          #eee 1px,
-          #fff 1px,
-          #fff 5%
-        );
-      }
-    </style>
-      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+     
+   
+      {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
 
 @endsection
 

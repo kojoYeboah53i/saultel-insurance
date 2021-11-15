@@ -13,32 +13,38 @@
     <title>
         @yield('title')
     </title>
-    <link rel="icon" type="image/x-icon" href="{{asset('storage/img/favicon.ico')}}"/>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/app-logo.png')}}"/>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Styles -->
     @include('inc.styles')  
     <link href="{{ asset('css/tailwind.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 
-<body {{ ($has_scrollspy) ? scrollspy($scrollspy_offset) : '' }} class=" {{ ($page_name === 'alt_menu') ? 'alt-menu' : '' }} {{ ($page_name === 'error404') ? 'error404 text-center' : '' }} {{ ($page_name === 'error500') ? 'error500 text-center' : '' }} {{ ($page_name === 'error503') ? 'error503 text-center' : '' }} {{ ($page_name === 'maintenence') ? 'maintanence text-center' : '' }}">
-    
+<body  class=" {{ ($page_name === 'alt_menu') ? 'alt-menu' : '' }} {{ ($page_name === 'error404') ? 'error404 text-center' : '' }} {{ ($page_name === 'error500') ? 'error500 text-center' : '' }} {{ ($page_name === 'error503') ? 'error503 text-center' : '' }} {{ ($page_name === 'maintenence') ? 'maintanence text-center' : '' }}">
     <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+    <div id="load_screen"> 
+        <div class="loader">
+         <div class="loader-content">
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
+
     <!--  END LOADER -->
-        <div class="fixed">
+
+    <div class="min-h-full"> 
+
             @include('inc.nav')
-        </div>
       
     
         <!--  BEGIN MAIN CONTAINER  -->
 
-            <div class="overlay"></div>
-            <div class="search-overlay"></div>
-            @include('inc.sideba')
+            <div class="sidebar-div">
+                @include('inc.sideba')
+
+            </div>
 
     
             <!--  BEGIN CONTENT PART  -->
@@ -49,13 +55,9 @@
             <!--  END CONTENT PART  -->
     
 
-
-    <style>
-        body {
-            background-color: #f5f5f5;
-        }
-    </style>
-    @include('inc.scripts')
+    </div>
+  
+    @include('inc.script')
 
 
     <script>

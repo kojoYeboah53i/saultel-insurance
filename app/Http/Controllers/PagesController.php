@@ -70,8 +70,8 @@ class PagesController extends Controller
             $partners = User::where('role_id', 2)->get();
             // $subscribers = Subscriber::all();//where('partner_id', 1)->get();
              $subscribers = Subscriber::where('partner_id', 1)->count();//->subscribers()->get();
-             $part = Partner::findOrFail(1)->subscriber();//where('partner_id', 1)->count();//->subscribers()->get();
-            return view('partner.admin', compact('user', 'part', 'partners', 'subscribers'))->with($data);
+            //  $part = Partner::findOrFail(1)->subscriber();//where('partner_id', 1)->count();//->subscribers()->get();
+            return view('partner.admin', compact('user',  'partners', 'subscribers'))->with($data);
         }
         else redirect('/login');
 
