@@ -1,20 +1,23 @@
-<div class=" w-full bg-black p-10 flex justify-between items-center mx-auto " style="z-index: -8; height: 7.8rem;" >
-    <!-- left -->
-    <div class="flex items-center">
-       <div class="flex items-center">
-           @if( $user->role_id == 1 || $user->role_id == 2 )
-                <a href="/" class="text-white text-2xl font-bold">
-                <img src="{{ asset('assets/img/app-logo.png') }}" alt="" class="w-60">
-                </a>
-         @endif
-         @if( $user->role_id == 3 )
-           <a href="/" class="text-white text-2xl font-bold">
-           <img src="{{ asset('assets/img/nyaho.jpg') }}" alt="" class="w-60">
-           </a>
-         @endif
-        </div>
+<div class="fixed w-full mx-auto px-4 sm:px-6 lg:px-8" style="z-index:10; background-color: #161616">
+<div class="flex items-center justify-between h-16" style=" height: 7.2rem;">
+  <div class="flex items-center">
+    <div class="flex-shrink-0">
+      {{-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> --}}
+   
+      @if( $user->role_id == 1 || $user->role_id == 2 )
+      <a href="/" class="text-white text-2xl font-bold">
+      <img src="{{ asset('assets/img/app-logo.png') }}" alt="" class="rounded-3xl w-60 ">
+      </a>
+      @endif
+      @if( $user->role_id == 3 )
+      <a href="/" class="text-white text-2xl font-bold">
+      <img src="{{ asset('assets/img/nyaho.jpg') }}" alt="" class="rounded-full w-32">
+      </a>
+      @endif
+    </div>
+  </div>
 
-   </div>
+  
 
        <!-- right -->
   
@@ -29,16 +32,7 @@
 
        </div>
      
-       <!--
-         Dropdown menu, show/hide based on menu state.
      
-         Entering: "transition ease-out duration-100"
-           From: "transform opacity-0 scale-95"
-           To: "transform opacity-100 scale-100"
-         Leaving: "transition ease-in duration-75"
-           From: "transform opacity-100 scale-100"
-           To: "transform opacity-0 scale-95"
-       -->
        <div class="hidden origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
          <div class="py-1" role="none">
            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
@@ -63,6 +57,14 @@
          </div>
        </div>
      </div>
-</div>
-<div class="h-10 w-full navshade"></div>
+    </div>
+  </div>
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-gray-900">
+      <div class="hidden">Dashboard</div>
+    </h1>
+  </div>
+</header>
+
 

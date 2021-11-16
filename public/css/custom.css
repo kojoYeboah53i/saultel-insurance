@@ -1,0 +1,43 @@
+.quick-action{
+    background-image: linear-gradient(120deg, #d8e07f, #7e6b1d);
+    border-radius: 25px;
+}
+*{
+    font-size: small;
+    /* background-color: aliceblue; */
+}
+
+body{
+    background-color: #373737;
+}
+
+
+.sidebar-div{
+    position: fixed;
+    top: 6.7rem;
+}
+.sidebar-slim{
+width: 5rem;
+}
+.sidebar{
+width: 18rem;
+transition: all 0.8s ease;
+}
+/* .dashboard{
+width: 92%;
+transition: all 0.8s ease;
+} */
+/* .main-container{
+display: block;
+left: 6%;
+padding: 10px;
+} */
+
+.previous.next{
+transition: ease 0.8s all;
+}
+.slide{
+transition: ease 0.8s all;
+position: relative;
+top: -200px;
+}

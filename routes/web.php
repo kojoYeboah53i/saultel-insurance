@@ -6,6 +6,8 @@ use App\Http\Controllers\Excel\ImportController;
 use App\Http\Controllers\ServiceProvider\FacilitiesController;
 use App\Http\Controllers\ServiceProvider\healthFacility;
 use App\Http\Controllers\PagesController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -1318,6 +1320,7 @@ Route::get('/password/reset', function() {
 Route::get('/', function() {
     return redirect('/sales');    
 });
+Route::middleware('auth')->group(function() {
 
 Route::get('asyncUser', function() {
     $data = [
@@ -1433,9 +1436,24 @@ Route::get('/admin',  function(){
     return view('admin.index')->with($data);
 })->name('admin');
 
-
 Route::get('/partners',  [PagesController::class, 'partners'])->name('partners.admin');
 Route::get('/create/partners',  [PagesController::class, 'createPartner'])->name('partners.create');
 Route::post('/create/partners',  [PagesController::class, 'createPartners'])->name('create.partner');
+Route::get('/service-providers',  [PagesController::class, 'serviceProviders'])->name('service-providers.admin');
+Route::get('/create/service-provider', function(){
+    $user = Auth::user();
 
+    if(Auth::user()->role_id == 1){
 
+    $data = [
+        'category_name' => 'service-providers',
+        'page_name' => 'create-service-providers',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.add', compact('user'))->with($data);
+}
+
+})->name('create.service-providers');
+
+});

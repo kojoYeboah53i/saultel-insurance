@@ -1,4 +1,12 @@
+## demo
 
+**[demo](http://doshperl.website/)**
+# login
+ - user: admin@mail.com
+ - password: admin
+## screenshots
+<img src="dashboard-screenshot-1.png">
+<img src="dashboard-screenshot-2.jpeg">
 # excel
  - composer require maatwebsite/excel
  - php artisan make:export UsersExport --model=User

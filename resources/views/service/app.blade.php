@@ -25,15 +25,15 @@
           <div class="card bg-info">
             <div class="card-body">
                 <div class="flex justify-between mb-5">
-                    <span class="font-extrabold text-lg">Total Number of Subscribers</span>
-                    <span class="">15%</span>
+                    <span class="font-extrabold text-lg">Total Subscribers Visits</span>
+                    <span class="">12%</span>
                 </div>
         
 
               <div class="flex justify-between mt-5">
-                <i class="fas fa-user fa-2x"></i>
+                <i class="fas fa-chart-line fa-2x"></i>
                 <span class="users flex ">
-                    145,000</span>
+                    45,000</span>
                     <span class="badge badge-light">April</span>
                  
             </div>
@@ -45,7 +45,7 @@
           <div class="card btn-success">
             <div class="card-body">
                 <div class="flex justify-between mb-5">
-                    <span class="font-extrabold text-lg">Total Paid Claims <br><span class="hide">for this</span></span>
+                    <span class="font-extrabold text-lg">Total Paid Claims current month</span>
                     <span class="">22%</span>
                 </div>
         
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="col rounded-3xl ">
+        <div class="col rounded-3xl shadow-lg">
             <div class="card bg-danger">
                 <div class="card-body">
                     <div class="flex justify-between mb-5">
@@ -81,13 +81,32 @@
                 </div>
             </div>
           </div>
-       
+          <div class="col">
+            <div class="card bg-warning">
+                <div class="card-body">
+                    <div class="flex justify-between mb-5">
+                        <span class="font-extrabold text-xl">Total Number of Current Staff</span>
+                        <span class=""></span>
+                    </div>
+            
+    
+                  <div class="flex justify-between mt-5">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <span class="users flex ">
+                        100</span>
+                        <span class="badge badge-light">April</span>
+                     
+                </div>
+    
+                </div>
+            </div>
+          </div>
       </div>
     </div>
     <div class="col w-full  mt-10" style="">
         <div class="widget widget-chart-one">
             <div class="widget-heading ">
-                <h5 class="">Revenue vs Pay Outs</h5>
+                <h5 class="">Approved vs Declined Claims</h5>
                 <ul class="tabs tab-pills">
                     {{-- <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"></a></li> --}}
                 </ul>
@@ -116,7 +135,6 @@
                             <tr>
                                 <th><div class="th-content">Subscriber</div></th>
                                 <th><div class="th-content">Treatment</div></th>
-                                <th><div class="th-content">Facility</div></th>
                                 <th><div class="th-content th-heading">Amount Paid</div></th>
                                 <th><div class="th-content th-heading">Status</div></th>
                                 <th><div class="th-content th-heading">Delete</div></th>
@@ -127,7 +145,6 @@
                             <tr class="">
                                 <td class="text-white font-extrabold"><div class="td-content text-white font-extrabold text-xl">John Doe</div></td>
                                 <td class="text-white font-extrabold"><div class="td-conten text-white font-extrabold text-xl">Acanthamoeba </div></td>
-                                <td class="text-white font-extrabold"><div class="td-conten text-white font-extrabold text-xl">Korle Bu </div></td>
                                 <td><div>
                                     <span class="flex justify-center items-center">
                                      <a href="#" class=" hover:text-gray-100  mx-2  text-white font-extrabold text-xl">
@@ -150,10 +167,9 @@
                             </tr>
                 
                             <tr class="">
-                                <td class="text-white "><div class="td-content text-white  text-lg">Jane Doe</div></td>
-                                <td class="text-white "><div class="td-conten text-white  text-lg">Osteoarthritis </div></td>
-                                <td class="text-white "><div class="td-conten text-white  text-lg">Nyaho Clinic </div></td>
-                                <td class="text-white "><div class="td-content pricing"><span class="text-white font-extrabold text-lg flex justify-center items-center">
+                                <td class="text-white font-extrabold"><div class="td-content text-white font-extrabold text-xl">Jane Doe</div></td>
+                                <td class="text-white font-extrabold"><div class="td-conten text-white font-extrabold text-xl">Osteoarthritis </div></td>
+                                <td class="text-white font-extrabold"><div class="td-content pricing"><span class="text-white font-extrabold text-xl flex justify-center items-center">
                                     <a href="#" class=" hover:text-gray-100 mr-2 text-base text-white">
                                         5,000
                                     </a>
@@ -193,7 +209,7 @@
 
                 <nav>
                     <ul class="flex-col p-1 justify-around items-center">
-                        <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-white ">Check Balance</li>
+                        <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-white ">Submit new Claim</li>
                         <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5">View Claim Reports</li>
                         <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5"> Settings</li>
                         {{-- <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5"> Task 4</li> --}}
@@ -237,9 +253,6 @@
     .line-graph {
         background-color: #161616;
         width: 100%;
-    }
-    .hide{
-        visibility: hidden;
     }
     </style>
 <link href="{{asset('plugins/apex/apexcharts.css')}}" rel="stylesheet" type="text/css">
