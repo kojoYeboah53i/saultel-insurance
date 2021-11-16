@@ -2,8 +2,8 @@
 
     <nav class="slim ">
         <ul class="list-reset">
-            <li class="py-4" onclick="menu_full()">
-                <a href="#" class="text-white">
+            <li class="py-4 cursor-pointer" onclick="menu_full()">
+                <a href="#" class="text-white cursor-pointer">
                     <i class="fas fa-bars fa-2x"></i>
                 </a>
             </li>
@@ -44,7 +44,7 @@
      </nav>
 </div>
 
-<div class=" sidebar-full  hidden transition ease-in duration-150 h-screen flex-col items-center py-2 px-4 " style="background-color: #161616">
+<div class=" sidebar-full   transition ease-in duration-150 h-screen flex-col items-center py-2 px-4 " style="background-color: #161616">
 
      <nav class="nav justify-content-center  ">
         <ul class="list-reset">

@@ -16,4 +16,5 @@ pages controller
 - [ ] transactions table ui
 - [ ] page loader script to wait for doc ready
 - [ ] route middleware for the role_id so that the routes to the pages will be protected by the role id
-  
+- [ ] service provider submit claim to partner to pay
+- [ ] 

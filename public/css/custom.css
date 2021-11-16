@@ -23,15 +23,15 @@ width: 5rem;
 width: 18rem;
 transition: all 0.8s ease;
 }
-.dashboard{
+/* .dashboard{
 width: 92%;
 transition: all 0.8s ease;
-}
-.main-container{
+} */
+/* .main-container{
 display: block;
 left: 6%;
 padding: 10px;
-}
+} */
 
 .previous.next{
 transition: ease 0.8s all;

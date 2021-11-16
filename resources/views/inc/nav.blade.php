@@ -11,13 +11,12 @@
       @endif
       @if( $user->role_id == 3 )
       <a href="/" class="text-white text-2xl font-bold">
-      <img src="{{ asset('assets/img/nyaho.jpg') }}" alt="" class="w-60 ">
+      <img src="{{ asset('assets/img/nyaho.jpg') }}" alt="" class="rounded-full w-32">
       </a>
       @endif
     </div>
   </div>
-{{-- <div class=" w-full  p-10 flex justify-between items-center mx-auto " style="z-index: -8; height: 7.8rem;" > --}}
-    <!-- left -->
+
   
 
        <!-- right -->
@@ -58,8 +57,14 @@
          </div>
        </div>
      </div>
-</div>
-</div>
-</div>
+    </div>
+  </div>
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-gray-900">
+      <div class="hidden">Dashboard</div>
+    </h1>
+  </div>
+</header>
 
 

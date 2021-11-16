@@ -52,7 +52,7 @@ class PagesController extends Controller
                 'has_scrollspy' => 0,
                 'scrollspy_offset' => '',
             ];
-            return view('servicepovider.index', compact('user'))->with($data);
+            return view('service.app', compact('user'))->with($data);
         } 
     }
 
@@ -108,6 +108,22 @@ class PagesController extends Controller
         }
         else redirect('/login');
     }
+
+    public function serviceProviders(){
+        $user = auth()->user();
+
+        if(auth()->user()->role_id == 1){
+
+            $data = [
+                'category_name' => 'service-providers',
+                'page_name' => 'service-providers',
+                'has_scrollspy' => 0,
+                'scrollspy_offset' => '',
+            ];
+            return view('service.index', compact('user'))->with($data);
+    }
+}
+
      public function login()
      {
         return view('auth.login');
