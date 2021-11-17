@@ -1456,4 +1456,21 @@ Route::get('/create/service-provider', function(){
 
 })->name('create.service-providers');
 
+Route::get('/create/new-claim', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'add new claim',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.claim', compact('user'))->with($data);
+}
+    return redirect('/login');
+
+})->name('create.new-claim');
+
 });

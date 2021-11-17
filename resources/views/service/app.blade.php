@@ -209,7 +209,7 @@
 
                 <nav>
                     <ul class="flex-col p-1 justify-around items-center">
-                        <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-white ">Submit new Claim</li>
+                        <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-white "> <a href="{{ route('create.new-claim') }}">Submit new Claim</a></li>
                         <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5">View Claim Reports</li>
                         <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5"> Settings</li>
                         {{-- <li class="mb-3 shadow-2xl p-1 rounded-2xl font-bold flex items-center mx-auto justify-center h-14 w-60 bg-gray-600 text-gray-100 mt-5"> Task 4</li> --}}
