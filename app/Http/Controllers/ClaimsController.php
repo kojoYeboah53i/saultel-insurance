@@ -45,6 +45,11 @@ class ClaimsController extends Controller
     public function store(Request $request)
     {
         //
+        $subscriber = new Subscriber;
+        $subscriber->name = 'Jane Doe';
+        $subscriber->email = 'fannie88@example.com';
+        $subscriber->partner_id = 1;
+        $subscriber->save();
     }
 
     /**
@@ -55,10 +60,11 @@ class ClaimsController extends Controller
      */
     public function search(Request $request)
     {
-        $subscriber = new Subscriber;
-        $subscriber->name = 'John Doe';
-        $subscriber->email = 'mante.candace@example.net';
-        $subscriber->partner_id = 1;
+        $subscriber = new Partner;
+        $subscriber->name = 'Dosh';
+        $subscriber->email = 'dosh@mail.com';
+        $subscriber->address = '45 Airport, Accra';
+        $subscriber->phone = '+2332456000';
         $subscriber->save();
         // $subscribers = Subscriber::all();
         // dd($subscribers);
