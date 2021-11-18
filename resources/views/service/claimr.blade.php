@@ -89,6 +89,9 @@
             </div>
             
                 @endif
+                <div class="flex-col items-center p-2 bg-gray-300 text-white">
+                    {{ var_dump($serviceProviders) }}
+                </div>
               </div>
 
               </main>

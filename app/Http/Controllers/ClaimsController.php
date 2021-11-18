@@ -61,15 +61,18 @@ class ClaimsController extends Controller
      */
     public function search(Request $request)
     {
-        $subscriber = new ServiceProvider;
-        $subscriber->name = 'Nyaho Clinic';
-        $subscriber->email = 'nyaho@mail.com';
-        $subscriber->address = '45 Ridge, Accra';
-        $subscriber->phone = '+2332456000';
-        $subscriber->partner_id = 1;//'+2332456000';
-        $subscriber->save();
-        // $subscribers = Subscriber::all();
-        dd($subscribers);
+        $user = auth()->user();
+
+        $data = [
+            'category_name' => 'claim',
+            'page_name' => 'new claim',
+            'has_scrollspy' => 0,
+            'scrollspy_offset' => '',
+        ];
+        $subscribers = Subscriber::where('partner_id', 1)->get();
+        $partners = Partner::all();
+        $serviceProviders = ServiceProvider::all();
+        return view('service.claimr', compact('user', 'subscribers', 'partners', 'serviceProviders'))->with($data);
         /*
         $search = $request->search;
         $users = User::where('name', 'LIKE', '%'.$search.'%')->get();
