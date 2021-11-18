@@ -17,7 +17,9 @@ class CreateSubscribersTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('email')->nullable();
-            $table->unsignedInteger('partner_id')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('subscription_id')->nullable();
+            $table->unsignedInteger('partner_id');
             $table->foreign('partner_id')->references('id')->on('partners')->onDelete('cascade');
             $table->timestamps();
 

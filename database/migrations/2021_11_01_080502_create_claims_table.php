@@ -15,7 +15,17 @@ class CreateClaimsTable extends Migration
     {
         Schema::create('claims', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('policy_number');
+            $table->integer('service_provider_id');
+            $table->integer('subscriber_id');
+            $table->string('institution');
+            $table->string('department');
+            $table->string('doctor')->nullable();
+            $table->string('treatment_type')->nullable();
+            $table->string('diagnosis')->nullable();
+            $table->string('treatment_description')->nullable();
+            $table->string('uploaded_files_url')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

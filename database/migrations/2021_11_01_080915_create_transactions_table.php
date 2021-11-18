@@ -15,15 +15,14 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedBigInteger('transaction_type_id');
+            $table->unsignedBigInteger('partner_id')->nullable();
             $table->unsignedBigInteger('subcategory_id')->nullable();
-            $table->unsignedBigInteger('account_id')->nullable();
-            $table->string('name')->nullable();
-            $table->string('description')->nullable();
-            $table->decimal('amount', 10, 2)->nullable();
-            $table->date('date')->nullable();
-
+            $table->unsignedBigInteger('policy_id')->nullable();
+            $table->string('service_provider_id')->nullable();
+            $table->string('status')->default('pending');
+            $table->decimal('transaction_amount', 10, 2)->nullable();
+            $table->date('transaction_date');
             $table->timestamps();
         });
     }

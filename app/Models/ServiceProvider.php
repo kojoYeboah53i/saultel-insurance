@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class ServiceProvider extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'id';
+    protected $fillable = ['name', 'email', 'address', 'partner_id', 'phone'];
 }
