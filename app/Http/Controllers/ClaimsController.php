@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
+use App\Models\Partner;
+use App\Models\Subscriber;
 
 use Illuminate\Http\Request;
 
@@ -45,7 +48,15 @@ class ClaimsController extends Controller
      */
     public function search(Request $request)
     {
-        dd($request->all());
+        $subscribers = Subscriber::all();
+        dd($subscribers);
+        /*
+        $search = $request->search;
+        $users = User::where('name', 'LIKE', '%'.$search.'%')->get();
+        $partners = Partner::where('name', 'LIKE', '%'.$search.'%')->get();
+        $subscribers = Subscriber::where('name', 'LIKE', '%'.$search.'%')->get();
+        return view('claims.search', compact('users', 'partners', 'subscribers'));
+        */
     }
 
     /**
