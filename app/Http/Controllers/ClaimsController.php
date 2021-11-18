@@ -66,6 +66,7 @@ class ClaimsController extends Controller
         $subscriber->email = 'nyaho@mail.com';
         $subscriber->address = '45 Ridge, Accra';
         $subscriber->phone = '+2332456000';
+        $subscriber->partner_id = 1;//'+2332456000';
         $subscriber->save();
         // $subscribers = Subscriber::all();
         dd($subscribers);
