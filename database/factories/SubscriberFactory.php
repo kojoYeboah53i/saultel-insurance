@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Factories;
-
 use App\Models\Subscriber;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -34,7 +33,4 @@ class SubscriberFactory extends Factory
             'partner_id' => 1,
         ];
     }
-
-    //use tinker to create a subscriber
-      // Subscriber::factory()->count(5)->create();
 }
