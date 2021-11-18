@@ -35,13 +35,13 @@
                             {{-- <div class="px-4 py-6 sm:px-0"> --}}
                                 <div>
 
-                              <form action="{{ route('create.partner')}}" method="POST" id="add-partner-form">
+                              <form action="{{ route('create.search.patient')}}" method="POST" id="add-partner-form">
                                 @csrf
                                   {{-- <div class="form-group w-full"> --}}
                                     <div class="form-group">
                                       <div class="flex">
                                       <input type="text" class="form-control" name="policyNumber" id="policyNumber" placeholder="policy number">
-                                      <button class="flex items-center py-1 px-4 bg-green-400 rounded"> 
+                                      <button type="submit" class="search-form flex items-center py-1 px-4 bg-green-400 rounded"> 
                                         <i class="material-icons-round text-base text-white">search</i>
                                       </button>
                                 </div>
@@ -64,7 +64,9 @@
             </main>
 
 
-
+            <script>
+                search-form
+            </script>
 
 
 

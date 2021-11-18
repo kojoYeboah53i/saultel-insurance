@@ -6,8 +6,10 @@ use App\Http\Controllers\Excel\ImportController;
 use App\Http\Controllers\ServiceProvider\FacilitiesController;
 use App\Http\Controllers\ServiceProvider\healthFacility;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ClaimsController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -1472,5 +1474,9 @@ Route::get('/create/new-claim', function(){
     return redirect('/login');
 
 })->name('create.new-claim');
+
+Route::post('/create/new-claim',[ClaimsController::class, 'search'])->name('create.search.patient');
+
+
 
 });
