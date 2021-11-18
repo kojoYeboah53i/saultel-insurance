@@ -1510,7 +1510,21 @@ Route::get('/new-claim-request', function(){
     return redirect('/login');
 })->name('new-claim-request');
 
+Route::get('/claim-success', function(){
+    $user = Auth::user();
 
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.success', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('claim-success');
 
 
 

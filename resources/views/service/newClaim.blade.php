@@ -48,13 +48,12 @@
                                 <div class="widget-content widget-content-area mb-5">
                                     <label for="">Select Doctor</label>
                                     <select class="form-control form-large">
-                                      <option selected="selected">OPD</option>
-                                      <option class="text-lg">ENT</option>
-                                      <option>Maternity</option>
-                                      <option>Surgical</option>
-                                      <option>Dental</option>
-                                      <option>Laboratory</option>
-                                      <option>Pharmacy</option>
+                                      <option selected="selected">Dr. Anthony Boateng</option>
+                                      <option class="text-lg">Dr. Jane Foster</option>
+                                      <option>Dr. Steve Rodgers</option>
+                                      <option>Dr. Michael Otoo</option>
+                                      <option>Dr. Kwame Ansah</option>
+                                      
                                     </select>
                                
                                 </div>
@@ -62,13 +61,10 @@
                                 <div class="widget-content widget-content-area mb-5 rounded-xl">
                                     <label for="">Service/Product</label>
                                     <select class="form-control form-large">
-                                      <option selected="selected">OPD</option>
-                                      <option class="text-lg">ENT</option>
-                                      <option>Maternity</option>
-                                      <option>Surgical</option>
-                                      <option>Dental</option>
-                                      <option>Laboratory</option>
-                                      <option>Pharmacy</option>
+                                      <option selected="selected">Consultation</option>
+                                      <option class="text-lg">Eye Surgery</option>
+                                      <option>STD Test</option>
+                                     
                                     </select>
                                
                                 </div>
@@ -130,7 +126,7 @@
                                 </div>
 
                                 <div class="flex justify-center mx-auto" style="width:60%">
-                                    <button type="button" class=" btn btn-block py-4 text-lg"> Submit</button>
+                                    <a href="claim-success" type="button" class=" btn btn-block py-4 text-lg"> Submit</a>
                                 </div>
                             </div>
                         </form>
