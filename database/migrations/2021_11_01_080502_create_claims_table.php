@@ -25,6 +25,9 @@ class CreateClaimsTable extends Migration
             $table->string('diagnosis')->nullable();
             $table->string('treatment_description')->nullable();
             $table->string('uploaded_files_url')->nullable();
+            $table->boolean('ct_scan')->default(false);
+            $table->boolean('x-ray')->default(false);
+            $table->boolean('miri')->default(false);
             $table->string('status')->default('pending');
             $table->timestamps();
         });

@@ -16,28 +16,29 @@
               </header>
               <main>
 
-              <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-col">
+              <div class="w-8/12 mx-auto py-6 sm:px-6 lg:px-8 flex-col container">
                 <!-- Replace with your content -->
                 <div class="px-4 py-6 sm:px-0">
                   <div class="overflow-auto lg:overflow-visible ">
                     <header class="flex  items-center justify-between mx-auto py-4 px-6">
-                        <h1 class="text-3xl font-bond">New Claim Request</h1>
+                        <h1 class="text-3xl font-bond">Service Request</h1>
                         <a href="/" type="button" class="text-xl font-bond text-white bg-green-600 hover:bg-green-900 py-2 px-4 rounded-xl"> Go back</a>
                 
                     </header>
 
-                    <div class="container text-center mx-auto" style="width: 50%">
-                        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                            <!-- Replace with your content -->
-                            <div class=" text-2xl text-white mb-5">
-                                    <h2>Search with patient's policy no.</h2>
+                    <div class="max-w-7xl mx-auto py-4 px-3" >
+                       
+                        <div class=" text-2xl text-white mb-5">
+                            <h2>Search with patient's policy no.</h2>
                             </div>
-                            {{-- <div class="px-4 py-6 sm:px-0"> --}}
-                                <div>
+                    <div class="text-center mx-auto flex justify-around w-11/12">
+
+                        <div class="p-2" style=" height: 30vh;">
+                            <!-- Replace with your content -->
+                         
 
                               <form action="{{ route('create.search.patient')}}" method="POST" id="add-partner-form">
                                 @csrf
-                                  {{-- <div class="form-group w-full"> --}}
                                     <div class="form-group">
                                       <div class="flex">
                                       <input type="text" class="form-control" name="policyNumber" id="policyNumber" placeholder="policy number">
@@ -49,18 +50,47 @@
 
                        
 
-                                {{-- <div class="w-1/2 text-center mx-auto">
-                                  <button type="submit" class="py-2 text-white text-2xl btn btn-block bg-green-400 hover:bg-green-500">Search</button>
-                                </div> --}}
                              </form>
                             </div>
                             <!-- /End replace -->
-                          {{-- </div> --}}
 
-                    </div>
+                   
+
+                    <div class="flex-col text-white  items-center bg-black py-2 px-6  mx-auto rounded-xl"  style="width: 50%;">
+                        <div class="mb-10 text-white text-3xl">
+                            <h2>Patient's Insurance Summary</h2>
+                        </div>
+                        <div class="form-group flex-col justify-start items-start ">
+                            <label class=" flex justify-start" for="">Policy Number</label>
+                            <input type="text" value="PD04553" class="form-control" readonly>
+                        </div>
+                        <div class="form-group flex-col justify-start items-start ">
+                            <label class=" flex justify-start" for="">Total Claim for 2021</label>
+                            <input type="text" value="40053" class="form-control" readonly>
+                        </div>
+                        <div class="form-group flex-col justify-start items-start ">
+                            <label class=" flex justify-start" for="">Cover Balance</label>
+                            <input type="text" value="20053" class="form-control" readonly>
+                        </div>
+                        <div class="form-group flex-col justify-start items-start ">
+                            <label class=" flex justify-start" for="">Insurance Plan</label>
+                            <input type="text" value="basic" class="form-control" readonly>
+                        </div>
+                        <div class="form-group flex-col justify-start items-start ">
+                            <label class=" flex justify-start" for="">Last Visited</label>
+                            <input type="text" value="23/08/2021" class="form-control" readonly>
+                        </div>
+                      </div>
                   </div>
                 </div>
+
             </div>
+        <div class="flex items-center justify-end mb-10">
+
+        <a href="{{ route('verify-otp') }}" type="button" class="text-xl font-bond text-white bg-green-600 hover:bg-green-900 py-2 px-4 rounded-xl"> Proceed</a>
+    </div>
+
+        </div>
             </main>
 
 

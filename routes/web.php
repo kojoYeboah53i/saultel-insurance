@@ -1477,6 +1477,48 @@ Route::get('/create/new-claim', function(){
 
 Route::post('/create/new-claim',[ClaimsController::class, 'search'])->name('create.search.patient');
 
+Route::get('/verify-otp', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.verify', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('verify-otp');
+
+
+Route::get('/new-claim-request', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.newClaim', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('new-claim-request');
+
+
+
+
+
+
+
+
+
+
 
 
 });
