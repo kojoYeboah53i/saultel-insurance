@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Partner;
 use App\Models\Subscriber;
+use App\Models\ServiceProvider;
 
 use Illuminate\Http\Request;
 
@@ -60,14 +61,14 @@ class ClaimsController extends Controller
      */
     public function search(Request $request)
     {
-        $subscriber = new Partner;
-        $subscriber->name = 'Dosh';
-        $subscriber->email = 'dosh@mail.com';
-        $subscriber->address = '45 Airport, Accra';
+        $subscriber = new ServiceProvider;
+        $subscriber->name = 'Nyaho Clinic';
+        $subscriber->email = 'nyaho@mail.com';
+        $subscriber->address = '45 Ridge, Accra';
         $subscriber->phone = '+2332456000';
         $subscriber->save();
         // $subscribers = Subscriber::all();
-        // dd($subscribers);
+        dd($subscribers);
         /*
         $search = $request->search;
         $users = User::where('name', 'LIKE', '%'.$search.'%')->get();
