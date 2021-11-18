@@ -26,7 +26,14 @@ class ClaimsController extends Controller
      */
     public function create()
     {
-        //
+        //new subscriber
+        $subscriber = new Subscriber;
+        $subscriber->name = 'John Doe';
+        $subscriber->email = 'mante.candace@example.net';
+        $subscriber->partner_id = 1;
+        $subscriber->save();
+        
+
     }
 
     /**
@@ -48,8 +55,13 @@ class ClaimsController extends Controller
      */
     public function search(Request $request)
     {
-        $subscribers = Subscriber::all();
-        dd($subscribers);
+        $subscriber = new Subscriber;
+        $subscriber->name = 'John Doe';
+        $subscriber->email = 'mante.candace@example.net';
+        $subscriber->partner_id = 1;
+        $subscriber->save();
+        // $subscribers = Subscriber::all();
+        // dd($subscribers);
         /*
         $search = $request->search;
         $users = User::where('name', 'LIKE', '%'.$search.'%')->get();
