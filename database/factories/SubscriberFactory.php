@@ -34,3 +34,6 @@ class SubscriberFactory extends Factory
         ];
     }
 }
+//use tinker to create a subscriber
+      // Subscriber::factory()->count(5)->create();
+      //php artisan make:factory AddressFactory --model="App\\Address"
