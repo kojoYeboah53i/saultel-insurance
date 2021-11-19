@@ -19,7 +19,7 @@ body{
 .sidebar-slim{
 width: 5rem;
 }
-.sidebar{
+.sidebar-full{
 width: 18rem;
 transition: all 0.8s ease;
 }

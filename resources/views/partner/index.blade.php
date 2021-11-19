@@ -62,6 +62,26 @@
           </div>
         </div>
         <div class="col rounded-3xl ">
+            <div class="card bg-warning">
+                <div class="card-body">
+                    <div class="flex justify-between mb-5">
+                        <span class="font-extrabold text-lg">Total Pending Claim Request</span>
+                        <span class="">5%</span>
+                    </div>
+            
+    
+                  <div class="flex justify-between mt-5">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <span class="users flex ">
+                        4,000</span>
+                        <span class="badge badge-light">April</span>
+                     
+                </div>
+    
+                </div>
+            </div>
+          </div>
+        <div class="col rounded-3xl ">
             <div class="card bg-danger">
                 <div class="card-body">
                     <div class="flex justify-between mb-5">
