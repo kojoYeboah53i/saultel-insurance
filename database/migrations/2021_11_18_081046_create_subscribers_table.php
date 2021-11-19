@@ -17,7 +17,9 @@ class CreateSubscribersTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('email')->nullable();
-            $table->unsignedBigInteger('partner_id')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('subscription_id')->nullable();
+            $table->unsignedInteger('partner_id');
             $table->foreign('partner_id')->references('id')->on('partners')->onDelete('cascade');
             $table->timestamps();
 
@@ -33,24 +35,4 @@ class CreateSubscribersTable extends Migration
     {
         Schema::dropIfExists('subscribers');
     }
-}
-
-
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Subscriber extends Model
-{
-    use HasFactory;
-    protected $primaryKey = 'id';
-
-    protected $fillable = 
-    ['name', 'email','partner_id'];
- 
-      public function partner(){
-         return $this->hasOne(Partner::class);
-     }
 }

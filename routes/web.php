@@ -1346,6 +1346,150 @@ Route::get('addPartner', function() {
 
 })->name('addPartner');
 
+
+
+Route::get('partner/service', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'service providers',
+        'page_name' => 'service providers',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.service', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.service');
+
+Route::get('partner/service/add', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'service providers',
+        'page_name' => 'service providers',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.addservice', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.service.add');
+
+
+
+
+
+Route::get('/policy', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'policy',
+        'page_name' => 'policy',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.policy', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.policy');
+
+Route::get('partner/claims', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'partner claims',
+        'page_name' => 'partner claims',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.claims', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.claims');
+
+Route::get('partner/policy/add', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'policy',
+        'page_name' => 'policy',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.addpolicy', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.policy.add');
+
+
+Route::get('partner/agents', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'partner agents',
+        'page_name' => 'partner agents',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.agents', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+})->name('partner.agents');
+
+
+
+Route::get('partner/subscribers', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'subscribers',
+        'page_name' => 'subscribers',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.subscription', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('partner.subscribers');
+
+Route::get('partner/transaction', function() {
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 2){
+    $data = [
+        'category_name' => 'partner transaction',
+        'page_name' => 'partner transaction',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('partner.transaction', compact('user'))->with($data);
+}else{
+    return redirect('/login');
+}
+
+})->name('view.transaction');
+
 Route::get('partnerProfile', function() {
     $data = [
         'category_name' => 'pages',
@@ -1476,6 +1620,62 @@ Route::get('/create/new-claim', function(){
 })->name('create.new-claim');
 
 Route::post('/create/new-claim',[ClaimsController::class, 'search'])->name('create.search.patient');
+
+Route::get('/verify-otp', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.verify', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('verify-otp');
+
+
+Route::get('/new-claim-request', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.newClaim', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('new-claim-request');
+
+Route::get('/claim-success', function(){
+    $user = Auth::user();
+
+    if(Auth::user()->role_id == 3){
+
+    $data = [
+        'category_name' => 'claim',
+        'page_name' => 'new claim request',
+        'has_scrollspy' => 0,
+        'scrollspy_offset' => '',
+    ];
+    return view('service.success', compact('user'))->with($data);
+    }
+    return redirect('/login');
+})->name('claim-success');
+
+
+
+
+
+
+
 
 
 
