@@ -1,99 +1,66 @@
-## demo
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-**[demo](http://doshperl.website/)**
-# login
- - user: admin@mail.com
- - password: admin
-## screenshots
-<img src="dashboard-screenshot-1.png">
-<img src="dashboard-screenshot-2.jpeg">
-# excel
- - composer require maatwebsite/excel
- - php artisan make:export UsersExport --model=User
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
+## About Laravel
 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-##  features
-- the mobile view should be on a subdomain "m.insuranceplus.com" the idea is to have two separate applications, one specifically for the desktop with responsive width and alignments and a different app for the mobile devices and tablets. this way he can limit features on the small devices as well as have rich quality user experience on both desktop and mobile.
-  
-## data schema
- - all users (users)
- - admin     ( superAdmin .e.g company)
- - client     (admin, .e.g GlicoInsurace,  )
- - Service p  (serviceProviders .e.g hospitals, )
- - Agent       (InsuranceAgent)
- - end client  (benefactor)
- - payment visa and mobile  ``` back log ```
- - orders    (end user bill for hospital or car insurance)
- - collections  (passbook where the agents collect the payment on the field)
-   ``` have a simulated passbook version for agents to display claims on the admin portal``` 
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## two apps with one db
-- insurancePlus has superAdmin, partner and service providers but users and agents table are being developed with another application. Now we have to work around building a web application that has two separate applications feeding from the same database and rendering a single unified user-experience. Julius the project lead thinks I should created the same tables(agents and users)  as he has in his database and form relationships with the them so that the superAdmin can delete a user added by a partner and partners can delete users and agents. agents can also delete users. this way we would have a database cluster online with a collection that has these relationships so the application in production can query the database from anywhere. 
+## Learning Laravel
 
-## users table
-  id name firstname lastname email password  `` done ``
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## script functions
- - forget password 
- - form validation
-  
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## pass the data from the api through a resource
+## Laravel Sponsors
 
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
+### Premium Partners
 
-## add partner 
- 
- - name
- - email
- - location
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[CMS Max](https://www.cmsmax.com/)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
+- **[Romega Software](https://romegasoftware.com)**
 
-## view partner 
--  paginated data
-  
-  # after they login
- - profile 
+## Contributing
 
-  # map
- - get api keys
- - show specific lat and lon for each health facility 
- - show a big map show all the health facilities across the country on the map 
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
+## Code of Conduct
 
-# edit health facility
-- button redirects to a page with the columns for editing the data
-  in the past i did this with ajax call and getting the specific health facility with an ID
-  which means this has to go through an api
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-  ## server login
-  https://my.bluehost.com/web-hosting/cplogin
+## Security Vulnerabilities
 
-  UN: owudarko@gmail.com
-  PW: Ananse@xyw!Lehona59
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-  server user: vyxxgqmy
-  server ip: 162.144.129.213
-  web url: http://doshperl.website
+## License
 
-  https://doshperl.website:2083/
-
-  ## cpanel db cred
-  User: vyxxgqmy_vyxxgqm
-  Database: vyxxgqmy_DoshMe
-  PW: Ananse@xyw!Lehona59
-
-  ## installing composer on cpanel
-  https://www.namecheap.com/support/knowledgebase/article.aspx/9977/29/how-to-install-composer-on-shared-servers/
-
-  ## kristen stewart movie
-  https://www.youtube.com/watch?v=uWYmdLR0jpI
-
-  ## adam sandler
-  - just go with it
-  https://www.youtube.com/watch?v=qqNkmtbojRU
-
-- catch me if you can
-- https://www.youtube.com/watch?v=tQgu1d4FiWI
-- https://www.youtube.com/watch?v=euZkMQIXII0 sex drive
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

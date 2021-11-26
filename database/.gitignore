@@ -1,4 +1,1 @@
-*.sqlite
-*.sqlite-journal
-Health Facilities and GPS Location
-Health Facilities and GPS Location
+*.sqlite*
