@@ -16,10 +16,26 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/dashboard');    
 });
 
 Auth::routes();
+// Route::get('/login', function() {
+//     // $category_name = 'auth';
+//     $data = [
+//         'category_name' => 'auth',
+//         'page_name' => 'login',
+  
+//     ];
+//     // $pageName = 'auth_default';
+//     return view('auth.login')->with($data);
+// });
+Route::get('/register', function() {
+    return redirect('/login');    
+});
+Route::get('/password/reset', function() {
+    return redirect('/login');    
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

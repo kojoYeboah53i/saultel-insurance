@@ -1,7 +1,10 @@
 @extends('layouts.app')
-
+@section('title')
+    {{'Dashboard'}}
+@endsection
 @section('content')
 
+@include('inc.header')
 
 <div class="bg-gray-400 h-screen">
     <div class="container">

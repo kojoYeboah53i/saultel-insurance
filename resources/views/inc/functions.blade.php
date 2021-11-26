@@ -23,8 +23,8 @@ if (!function_exists('setTitle')) :
             echo 'User Profile ' . $admin_name;
 
         // Widgets
-        elseif ($page_name === 'widgets') :
-            echo 'Widgets ' . $admin_name;
+        elseif ($page_name === 'login') :
+            echo 'login ' . $admin_name;
         endif;
 
         }
