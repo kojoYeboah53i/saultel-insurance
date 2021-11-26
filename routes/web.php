@@ -29,7 +29,11 @@ Route::group(['middleware' => 'auth'] , function() {
 // dashboard
 Route::get('/dashboard', function(){
     $user = Auth::user();
-    return view('dashboard.index', compact('user'));
+    $data = [
+        'category_name' => 'dashboard',
+        'page_name' => 'dashboard',
+    ];
+    return view('dashboard.index', compact('user'))->with($data);
 
 })->name('dashboard');
 
