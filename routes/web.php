@@ -20,15 +20,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-// Route::get('/login', function() {
-//     // $category_name = 'auth';
-//     $data = [
-//         'category_name' => 'auth',
-//         'page_name' => 'login',
-  
-//     ];
-//     // $pageName = 'auth_default';
-//     return view('auth.login')->with($data);
+
 // });
 Route::get('/register', function() {
     return redirect('/login');    
