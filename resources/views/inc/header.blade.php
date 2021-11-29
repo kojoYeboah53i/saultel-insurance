@@ -1,5 +1,5 @@
-<div class="fixed w-full mx-auto px-4 sm:px-6 lg:px-8" style="z-index:10; background-color: #161616">
-    <div class="flex items-center justify-between h-16" style=" height: 5.2rem;">
+<div class=" w-full mx-auto px-4 sm:px-6 lg:px-8 rounded-3xl" style="z-index:10; background-color: #161616">
+    <div class="flex items-center justify-between rounded-3xl " style=" height: 4.2rem;">
       <div class="flex items-center">
         <div class="flex-shrink-0">
           {{-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> --}}

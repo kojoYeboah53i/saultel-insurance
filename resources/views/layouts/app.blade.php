@@ -1,37 +1,59 @@
+<x-layouts.base>
+    {{-- If the user is authenticated --}}
+    @auth()
+        {{-- If the user is authenticated on the static sign up or the sign up page --}}
+        @if (in_array(request()->route()->getName(),['static-sign-up', 'sign-up'],))
+            @include('layouts.navbars.guest.sign-up')
+            {{ $slot }}
+            @include('layouts.footers.guest.with-socials')
+            {{-- If the user is authenticated on the static sign in or the login page --}}
+        @elseif (in_array(request()->route()->getName(),['sign-in', 'login'],))
+            @include('layouts.navbars.guest.login')
+            {{ $slot }}
+            @include('layouts.footers.guest.description')
+        @elseif (in_array(request()->route()->getName(),['profile', 'my-profile'],))
+            @include('layouts.navbars.auth.sidebar')
+            <div class="main-content position-relative bg-gray-100">
+                @include('layouts.navbars.auth.nav-profile')
+                <div>
+                    {{ $slot }}
+                    @include('layouts.footers.auth.footer')
+                </div>
+            </div>
+            @include('components.plugins.fixed-plugin')
+        @else
+            @include('layouts.navbars.auth.sidebar')
+            @include('layouts.navbars.auth.nav')
+            @include('components.plugins.fixed-plugin')
+            {{ $slot }}
+            <main>
+                <div class="container-fluid">
+                    <div class="row">
+                        @include('layouts.footers.auth.footer')
+                    </div>
+                </div>
+            </main>
+        @endif
+    @endauth
 
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{-- If the user is not authenticated (if the user is a guest) --}}
+    @guest
+        {{-- If the user is on the login page --}}
+        @if (!auth()->check() && in_array(request()->route()->getName(),['login'],))
+            @include('layouts.navbars.guest.login')
+            {{ $slot }}
+            <div class="mt-5">
+                @include('layouts.footers.guest.with-socials')
+            </div>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+            {{-- If the user is on the sign up page --}}
+        @elseif (!auth()->check() && in_array(request()->route()->getName(),['sign-up'],))
+            <div>
+                @include('layouts.navbars.guest.sign-up')
+                {{ $slot }}
+                @include('layouts.footers.guest.with-socials')
+            </div>
+        @endif
+    @endguest
 
-    <title>
-        @yield('title')
-    </title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
-
-    
-    <link href="{{ asset('css/tailwind.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-</head>
-<body class="">
-    @include('inc.header')
-    @include('inc.sidebar')
-            @yield('content')
-</body>
-</html>
+</x-layouts.base>
