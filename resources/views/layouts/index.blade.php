@@ -17,6 +17,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
 
     <!-- Styles -->
     @include('inc.styles')  
@@ -34,28 +35,27 @@
 
     <!--  END LOADER -->
 
-    <div class="min-h-full"> 
+    <div class="h-screen"> 
 
             @include('inc.nav')
       
     
         <!--  BEGIN MAIN CONTAINER  -->
-
+        <div class="grid grid-cols-2 gap-4">
             <div class="sidebar-div">
                 @include('inc.sideba')
 
             </div>
-
-    
             <!--  BEGIN CONTENT PART  -->
-    
-                @yield('content')
+            
+                <div class="bg-indigo-600 py-6 px10">
+                    @yield('content')
+                </div>
     
              
             <!--  END CONTENT PART  -->
-    
-
     </div>
+</div>
   
     @include('inc.script')
 
@@ -81,3 +81,5 @@
 
 </body>
 </html>
+
+

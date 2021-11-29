@@ -97,3 +97,14 @@
 - catch me if you can
 - https://www.youtube.com/watch?v=tQgu1d4FiWI
 - https://www.youtube.com/watch?v=euZkMQIXII0 sex drive
+
+- christmas
+- https://www.youtube.com/watch?v=F1itSKJLWQY&list=PL9tY0BWXOZFuWL91Db57hv9gjMLpIAqbI
+- 
+
+## The Most Emotional Freestyle/Rap Ever Must Watch!!! 
+
+- https://www.youtube.com/watch?v=6unIoezUoKk&t=16s
+
+## ten years into the future 
+- https://www.youtube.com/watch?v=Ras4gOLxxQ8

@@ -21,7 +21,7 @@
 
        <!-- right -->
   
-   <div class="relative inline-block text-left">
+   <div class=" inline-block text-left">
        <div class="admin flex items-center">
            <div class=" bg-white rounded-full p-2 mr-2">
                <img src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="" class="rounded-full w-8 h-8">
@@ -59,12 +59,6 @@
      </div>
     </div>
   </div>
-<header class="bg-white shadow">
-  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-bold text-gray-900">
-      <div class="hidden">Dashboard</div>
-    </h1>
-  </div>
-</header>
+
 
 
