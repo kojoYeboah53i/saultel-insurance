@@ -1,53 +1,189 @@
-<div  style="display:flex; ">
-           
-    <div style="margin-left: 5px; margin-bottom: 20px; padding: 50px; text-align: center; background-color: #5c1ac3; color: white " class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-12 layout-spacing">
-    <div class="card component-card_4">
-        <div class="card-body">
-            <div class="user-profile">
-                {{-- <img src="assets/img/90x90.jpg" class="" alt="..."> --}}
-            </div>
-            <div class="user-info">
-                <h5 class="card-user_name">Total Claims</h5>
-                <p class="card-user_occupation"></p>
-                <div class="card-star_rating">
-                   <span class="badge badge-primary" style="font-size:  40px;">12,300</span>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Bootstrap 4 Holygrail Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+
+  <style type="text/css">
+      html {
+          height: 100%;
+      }
+      .holygrail {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .holygrail-body {
+          flex: 1 0 auto;
+          display: flex;
+          flex-direction: column;
+      }
+      @media screen and (min-width: 768px) { /* @include media-breakpoint-up(lg) */
+          .holygrail-body {
+              flex-direction: row;
+          }
+          .holygrail-main {
+              flex: 1;
+          }      
+          .holygrail-nav, .holygrail-aside {
+              flex: 0 0 auto;
+          }
+      }
+  
+      /* Other styles */
+      .block {
+          padding: 3rem 0;
+      }
+      .text-inverse {
+          color: white;
+      }
+  </style>
+
+  <body class="holygrail">
+
+    <header class="bg-inverse text-white text-center py-4">
+        <h3>Header</h3>
+    </header>
+
+    <div class="holygrail-body no-gutters">
+
+        <!-- Nav -->
+        <nav class="holygrail-nav col-lg-2 col-xxl-1 bg-inverse">
+
+            <section class="text-center bg-danger">
+                <h2>Nav</h2>
+                <p class="lead">Here is where you put navigation or filters</p>
+            </section>
+
+            <div class="block bg-success text-inverse">
+                <div class="container-fluid">
+                    <section>
+                        <h2>Fluid</h2>
+                        <p class="lead mb-0">This element bleeds all the way out.</p>
+                    </section>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div  style="margin-left:5px; margin-bottom: 20px; padding: 50px; text-align: center; background-color: #e7515a; color: white " class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-12 layout-spacing">
-    <div class="card component-card_4">
-        <div class="card-body">
-            <div class="user-profile">
-                {{-- <img src="assets/img/90x90.jpg" class="" alt="..."> --}}
-            </div>
-            <div class="user-info">
-                <h5 class="card-user_name">Total Policies</h5>
-                {{-- <p class="card-user_occupation">Manager</p> --}}
-                <div class="card-star_rating">
-                   <span class="badge badge-primary" style="font-size:  40px;">100</span>
-                </div>
-                {{-- <p class="card-text"> Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies. </p> --}}
-            </div>
-        </div>
-    </div>
-</div>
- <div style="margin-bottom: 20px; padding: 50px; text-align: center; background-color: #e2a03f; color: white " class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-12 layout-spacing">
-     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-   <div class="card component-card_4">
-        <div class="card-body">
-            <div class="user-profile">
-             <img src="assets/img/90x90.jpg" class="" alt="..."> -
-            </div>
-            <div class="user-info">
-                <h5 class="card-user_name">Disbursment</h5>
-                <div class="card-star_rating">
-                   <span class="badge badge-primary " style="font-size: 40px;">14,389</span>
+
+            <div class="block py-0">
+                <div class="container-fluid mx-3 py-5 bg-info text-inverse">
+                    <section>
+                        <h2>Padded</h2>
+                        <p class="lead mb-0">This element has paddings.</p>
+                       
+                    </section>
                 </div>
             </div>
-        </div>
+
+            <div class="block bg-success text-inverse">
+                <div class="container-fluid">
+                    <section>
+                        <h2>Fluid</h2>
+                        <p class="lead mb-0">This element bleeds all the way out.</p>
+                    </section>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main -->
+        <main class="holygrail-main col-lg-7 col-xxl-9">
+            <section class="text-center bg-warning">
+                <h2>Main content</h2>
+                <p class="lead">Here is where you put your main content.</p>
+            </section>
+
+            <div class="block">
+                <div class="container-fluid">
+                    <section class="mb-4">
+                        <h1>A Holygrail Layout for Bootstrap 4</h2>
+                        <p class="lead">Resolved Philip Walton's Holygrail layout with Bootstrap 4 flexbox to achieve a more flexible layout template that consists of <code>nav</code>, <code>main</code> and <code>aside</code> parts</p>
+                    </section>
+
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Content + sidebars are fluid and their widths are defined by Bootstrap 4's grid system.</li>
+                        <li>All columns are the same height, regardless of which column is actually the tallest.</li>
+                        <li>Footer always sits at the bottom of the page, even when content is sparse.</li>
+                        <li>With the use of <code>.no-gutters</code>, content and sidebars are able to manage bleeds more effectively.</li>
+                        <li>No uneven breaking of background colors.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block">
+              <div class="container-fluid">
+                <h5>References</h5>
+                    <ul>
+                        <li><a href="https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/">Philip Walton: Holy Grail Layout Solved By Flexbox</a></li>
+                        <li><a href="https://v4-alpha.getbootstrap.com/layout/overview/">Bootstrap 4 Docs: Layout</a></li>
+                    </ul>
+              </div>
+            </div>
+
+        </main>
+
+        <!-- Aside -->
+        <aside class="holygrail-aside col-lg-3 col-xxl-2 bg-inverse">
+            
+            <section class="text-center bg-danger">
+                <h2>Aside</h2>
+                <p class="lead">Here is where you put useful information or ads</p>
+            </section>
+
+            <div class="block bg-success text-inverse">
+                <div class="container-fluid">
+                    <section>
+                        <h2>Fluid</h2>
+                        <p class="lead mb-0">This element bleeds all the way out.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="block py-0">
+                <div class="container-fluid mx-3 py-5 bg-info text-inverse">
+                    <section>
+                        <h2>Padded</h2>
+                        <p class="lead mb-0">This element has paddings.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="block bg-success text-inverse">
+                <div class="container-fluid">
+                    
+                    <section>
+                          <h2>Fluid</h2>
+                          <p class="lead">This element bleeds all the way out and demonstrates a grid.</p>
+                    </section>
+
+                    <div class="row">
+                        <div class="col-6 py-3 bg-info">
+                            <div class="row">
+                                <div class="col-6 py-3 bg-success">
+                                    <h5 class>Hello</h5>
+                                </div>
+                                <div class="col-6 py-3 bg-danger">
+                                    <h5 class>Bye</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 py-3 bg-warning">
+                            <h5>Bye</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </aside>
+
     </div>
-</div>
-</div> 
-</div>
+
+    <footer class="bg-danger text-inverse text-center py-4">
+        <h3>Footer</h3>
+    </footer>
+
+  </body>
+
+</html>

@@ -2,12 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
-use App\User;
-use Illuminate\Http\Response;
-// controllers
-use App\Http\Controllers\ServiceProvider\FacilitiesController;
-use App\Http\Controllers\Partner\AddController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,16 +17,3 @@ use App\Http\Controllers\Partner\AddController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-
-Route::get('/user', function () {
-   $user = User::where('name',  'Cork')->first();
-   $update = $user->update(['name' => 'Pork']);
-   return response()->json($update);
-})->name('getCurrentUser');
-
-Route::post('/addingPartner', [AddController::class, 'store'])->name('addingPartner');
-
-//route facility.edit
-Route::post('/facility/{id}', [FacilitiesController::class, 'update'])->name('facility.edit');//facility.edit
-Route::post('/facility/{id}', [FacilitiesController::class, 'delete'])->name('facility.destroy');

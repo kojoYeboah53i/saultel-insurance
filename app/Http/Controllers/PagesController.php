@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
-use App\Models\Partner;
-use App\Models\Subscriber;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -17,116 +15,12 @@ class PagesController extends Controller
     public function index()
     {
         //
-
-
-        if (!auth()->check()) {
-            return redirect('/login');
-        }
-
-         $user = auth()->user();
-        //  dd($user->name, $user->role_id);
-
-        if (auth()->user()->role_id == 1) {
-            $data = [
-                'category_name' => 'sales',
-                'page_name' => 'sales',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('dashboard', compact('user'))->with($data);
-        } 
-        if (auth()->user()->role_id == 2) {
-            $data = [
-                'category_name' => 'partner',
-                'page_name' => 'partner',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('partner.index', compact('user'))->with($data);
-        } 
-
-        if (auth()->user()->role_id == 3) {
-            $data = [
-                'category_name' => 'pages',
-                'page_name' => 'service provider',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('service.app', compact('user'))->with($data);
-        } 
-    }
-
-
-    public function partners(){
-        $user = auth()->user();
-
-        if(auth()->user()->role_id == 1){
-            $data = [
-                'category_name' => 'partner',
-                'page_name' => 'partner',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            $partners = User::where('role_id', 2)->get();
-            // $subscribers = Subscriber::all();//where('partner_id', 1)->get();
-             $subscribers = Subscriber::where('partner_id', 1)->count();//->subscribers()->get();
-            //  $part = Partner::findOrFail(1)->subscriber();//where('partner_id', 1)->count();//->subscribers()->get();
-            return view('partner.admin', compact('user',  'partners', 'subscribers'))->with($data);
-        }
-        else redirect('/login');
-
-    }
-
-    public function createPartner(){
-        $user = auth()->user();
-
-        if(auth()->user()->role_id == 1){
-            $data = [
-                'category_name' => 'partner',
-                'page_name' => ' create partner',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('partner.create', compact('user'))->with($data);
-        }
-        else redirect('/login');
-    }
-    
-    public function createPartners(Request $request){
-        $user = auth()->user();
-
-        if(auth()->user()->role_id == 1){
-
-            dd($request->all());
-            $data = [
-                'category_name' => 'partner',
-                'page_name' => ' create partner',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('partner.admin', compact('user'))->with($data);
-        }
-        else redirect('/login');
-    }
-
-    public function serviceProviders(){
-        $user = auth()->user();
-
-        if(auth()->user()->role_id == 1){
-
-            $data = [
-                'category_name' => 'service-providers',
-                'page_name' => 'service-providers',
-                'has_scrollspy' => 0,
-                'scrollspy_offset' => '',
-            ];
-            return view('service.index', compact('user'))->with($data);
-    }
-}
-
-     public function login()
-     {
-        return view('auth.login');
+        $user = Auth::user();
+        $data = [
+            'category_name' => 'dashboard',
+            'page_name' => 'dashboard',
+        ];
+        return view('dashboard.index', compact('user'))->with($data);
     }
 
     /**

@@ -38,4 +38,3 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 }
-// C:\Users\DELL\Desktop\GitHub\DoshMe\vendor\laravel\ui\auth-backend\AuthenticatesUsers.php
