@@ -50,6 +50,14 @@ Route::middleware('auth')->group(function () {
         return view('dashboard.claim')->with($data);
     })->name('claim.index');
 
+    Route::get('subscriber', function(){
+        $data = [
+            'category_name' => 'claim',
+            'page_name' => 'subscriber',
+        ];
+        return view('dashboard.subscriber')->with($data);
+    })->name('subscriber.index');
+
     Route::get('/billing', Billing::class)->name('billing');
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/tables', Tables::class)->name('tables');

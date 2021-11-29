@@ -8,5 +8,5 @@
 
 </div> --}}
     @include('inc.sidebar')
-
+    
 @endsection

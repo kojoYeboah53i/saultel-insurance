@@ -50,6 +50,10 @@
         background-color: #0a0a0ae8;
         color: white;
     }
+    .main-active-text{
+    color:  #e0b26c;
+
+    }
 
 
 
@@ -60,6 +64,20 @@
         background-image: linear-gradient(120deg,  #d1ba80, #bc9945);
         color : black;
     }
+    .payment
+                {
+                    border:1px solid #f2f2f2;
+                    height:280px;
+                    border-radius:20px;
+                    /* background:#fff; */
+                }
+    .payment_header
+               {
+                   background:#bf9c48;
+                   padding:20px;
+                   border-radius:20px 20px 0px 0px;
+                   
+               }
 
     @media only screen and (max-width: 720px) {
         .this-sidebar{

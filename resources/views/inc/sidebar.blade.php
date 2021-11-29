@@ -27,11 +27,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white " href="./pages/tables.html">
+            <a class="nav-link text-white {{ $page_name === 'subscriber' ? 'active' : ''  }} "  href="{{ route('subscriber.index') }}">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">table_view</i>
+                <i class="material-icons opacity-10">people</i>
               </div>
-              <span class="nav-link-text ms-1">Tables</span>
+              <span class="nav-link-text ms-1">Subscriber</span>
             </a>
           </li>
         </ul>
