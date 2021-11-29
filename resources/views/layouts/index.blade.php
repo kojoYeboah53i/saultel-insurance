@@ -58,6 +58,9 @@
     
     }
 </style>
+
+@include('inc.custom')
+
 </body>
 </html>
 

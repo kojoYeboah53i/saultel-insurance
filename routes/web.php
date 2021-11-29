@@ -41,7 +41,7 @@ Route::get('/login/forgot-password', ForgotPassword::class)->name('forgot-passwo
 Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')->middleware('signed');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', [PagesController::class, 'index'])->name('dashboard.index');
+    Route::get('/dashboard', [PagesController::class, 'index'])->name('dashboard');
     Route::get('claim', function(){
         $data = [
             'category_name' => 'claim',

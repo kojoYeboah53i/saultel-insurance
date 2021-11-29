@@ -16,6 +16,8 @@
 @switch($page_name)
     @case('dashboard')
     <script src="{{ asset('js/custom.js')  }}"></script></script> 
+    <script src="{{asset('assets/apex/apexcharts.min.js')}}"></script>
+    <script src="{{asset('material-ui/js/chart1.js')}}"></script>
     @break
 
 @default

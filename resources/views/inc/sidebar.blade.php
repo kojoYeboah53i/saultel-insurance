@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link {{ $page_name === 'dashboard' ? 'active' : ''  }}" href="{{ route('dashboard.index') }}">
+            <a class="nav-link {{ $page_name === 'dashboard' ? 'active' : ''  }}" href="{{ route('dashboard') }}">
               <div class=" text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">dashboard</i>
               </div>
