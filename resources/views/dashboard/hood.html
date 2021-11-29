@@ -1,0 +1,49 @@
+<div class="flex justify-between items-center mx-auto">
+    <div>
+        
+        <form action="#" method="POST" id="add-partner-form">
+            @csrf
+                <div class="form-group">
+                  <div class="flex">
+                  <input type="text" class="form-control" name="policyNumber" id="policyNumber" placeholder="policy number">
+                  <button type="submit" class="search-form flex items-center py-1 px-4 bg-green-400 rounded"> 
+                    <i class="material-icons-round text-base text-white">search</i>
+                  </button>
+            </div>
+            </div>
+
+   
+
+         </form>
+    </div>
+    <div>
+
+        
+        <div class="flex-col text-white  items-center bg-black py-2 px-6  mx-auto rounded-xl"  style="width: 50%;">
+            <div class="mb-10 text-white text-3xl">
+                <h2>Patient's Insurance Summary</h2>
+            </div>
+            <div class="form-group flex-col justify-start items-start ">
+                <label class=" flex justify-start" for="">Policy Number</label>
+                <input type="text" value="PD04553" class="form-control" readonly>
+            </div>
+            <div class="form-group flex-col justify-start items-start ">
+                <label class=" flex justify-start" for="">Total Claim for 2021</label>
+                <input type="text" value="40053" class="form-control" readonly>
+            </div>
+            <div class="form-group flex-col justify-start items-start ">
+                <label class=" flex justify-start" for="">Cover Balance</label>
+                <input type="text" value="20053" class="form-control" readonly>
+            </div>
+            <div class="form-group flex-col justify-start items-start ">
+                <label class=" flex justify-start" for="">Insurance Plan</label>
+                <input type="text" value="basic" class="form-control" readonly>
+            </div>
+            <div class="form-group flex-col justify-start items-start ">
+                <label class=" flex justify-start" for="">Last Visited</label>
+                <input type="text" value="23/08/2021" class="form-control" readonly>
+            </div>
+          </div>
+    </div>
+
+</div>

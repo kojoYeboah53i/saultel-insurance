@@ -42,13 +42,31 @@ Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')-
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [PagesController::class, 'index'])->name('dashboard');
+  
     Route::get('claim', function(){
         $data = [
             'category_name' => 'claim',
             'page_name' => 'claim',
         ];
-        return view('dashboard.claim')->with($data);
+        return view('dashboard.otp')->with($data);
     })->name('claim.index');
+
+    Route::get('subscriber-otp', function(){
+        $data = [
+            'category_name' => 'claim',
+            'page_name' => 'claim',
+        ];
+        return view('dashboard.otp')->with($data);
+    })->name('subscriber.otp');
+
+    Route::get('subscriber-claim', function(){
+        $data = [
+            'category_name' => 'claim',
+            'page_name' => 'claim',
+        ];
+        return view('dashboard.claim')->with($data);
+    })->name('subscriber.claim');
+
 
     Route::get('subscriber', function(){
         $data = [
