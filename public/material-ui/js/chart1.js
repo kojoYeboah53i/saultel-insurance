@@ -440,7 +440,7 @@ try {
       stroke: {
         show: true,
         width: 25,
-        colors: '#0e1726'
+        colors: '#0a0a0ae8'
       },
       series: [985, 737, 270],
       labels: ['Approved', 'Pending', 'Declined'],

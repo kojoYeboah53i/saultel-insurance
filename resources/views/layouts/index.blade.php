@@ -42,6 +42,16 @@
      width: 80vw;
      background: #fff;
     }
+    .default-color{
+    background-color:  #201f1f67;
+    color: white;
+    }
+    .default-color-dark{
+        background-color: #0a0a0ae8;
+        color: white;
+    }
+
+
 
     .this-sidebar{
         background-color: #161616;

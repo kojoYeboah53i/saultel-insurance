@@ -14,7 +14,7 @@
     </div> --}}
 <main class="main-content position-relative  max-height-vh-100 h-100 border-radius-lg  rounded-3xl mt-2">
 
-<div class="container mb-4" style="background: #201f1f67">
+<div class="container mb-4 default-color">
     <div class="container-fluid py-4">
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -89,17 +89,17 @@
      
       
         </div>
-        <div class="row mt-4 mb-4" style="background: #0a0a0ae8">
-          <div class="col-lg-4 col-md-6" style="background: #0a0a0ae8">
-              <div class="card h-100">
+        <div class="row mt-4 mb-4 ">
+          <div class="col-lg-4 col-md-6" >
+              <div class="card h-100 default-color-dark">
  
-            <div class="card-body" style="background: #0a0a0ae8">
+            <div class="card-body">
               <div class="widget widget-chart-two">
                   <div class="widget-heading">
-                      <h5 class="">Claims</h5>
+                      <h5 class="text-white">Claims</h5>
                   </div>
-                  <div class="widget-content" style="background: #0a0a0ae8">
-                      <div id="chart-2" class="" style="background: #0a0a0ae8"></div>
+                  <div class="widget-content">
+                      <div id="chart-2" class="text-white" ></div>
                   </div>
               </div>
             </div>
