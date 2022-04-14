@@ -13,7 +13,7 @@
             <!-- Navbar -->
      
             <!-- End Navbar -->
-            <div class="container-fluid px-2 px-md-4 mt-lg-4">
+            <div class="container-fluid px-2 px-md-4 mt-lg-4 default-color-dark">
           
               <div class="h-16 w-full mt-4">
     
@@ -21,8 +21,8 @@
               <div class="card card-body mx-3 mx-md-4 mt-n6 default-color-dark">
             <div class="row default-color-dark">
           <div class="col-12 default-color-dark">
-              <div class="card mb-4">
-                <div class="card-header pb-0">
+              <div class="card mb-4 default-color-dark text-white">
+                <div class="card-header pb-0 default-color-dark">
                   <h6>Inventory List</h6>
                 </div>
             <div class="flex justify-between items-center mx-auto p-2">
