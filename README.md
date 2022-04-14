@@ -108,3 +108,9 @@
 
 ## ten years into the future 
 - https://www.youtube.com/watch?v=Ras4gOLxxQ8
+- ## bill burr 2002 atlanta city
+https://www.youtube.com/watch?v=zWBIRWG_daM
+
+
+
+
