@@ -3,7 +3,7 @@
     @auth()
         {{-- If the user is authenticated on the static sign up or the sign up page --}}
         @if (in_array(request()->route()->getName(),['static-sign-up', 'sign-up'],))
-            @include('layouts.navbars.guest.sign-up')
+            {{-- @include('layouts.navbars.guest.sign-up') --}}
             {{ $slot }}
             @include('layouts.footers.guest.with-socials')
             {{-- If the user is authenticated on the static sign in or the login page --}}

@@ -30,8 +30,14 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/' , function(){
+// dd('index page');
+    return redirect('login');
+    // return view('livewire.auth.login');
+
+});
+Route::get('/login', Login::class)->name('login');
 Auth::routes();
-Route::get('/', Login::class)->name('login');
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
 Route::get('/login', Login::class)->name('login');
@@ -75,6 +81,14 @@ Route::middleware('auth')->group(function () {
         ];
         return view('dashboard.subscriber')->with($data);
     })->name('subscriber.index');
+
+    Route::get('addItem', function(){
+        $data = [
+            'category_name' => 'inventory',
+            'page_name' => 'addItem',
+        ];
+        return view('dashboard.addItem')->with($data);
+    })->name('inventory.addItem');
 
     Route::get('/billing', Billing::class)->name('billing');
     Route::get('/profile', Profile::class)->name('profile');

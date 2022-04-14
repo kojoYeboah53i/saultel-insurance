@@ -24,7 +24,7 @@
                   <i class="material-icons opacity-10">directions_run</i>
                 </div>
                 <div class="text-end pt-1 text-white">
-                  <p class="text-lg mb-0 text-capitalize text-white">Subscriber Visits</p>
+                  <p class="text-lg mb-0 text-capitalize text-white">Inventory List</p>
                   <h4 class="mb-0 text-white">53k</h4>
                 </div>
               </div>
@@ -41,7 +41,7 @@
                   <i class="material-icons opacity-10">credit_card</i>
                 </div>
                 <div class="text-end pt-1">
-                  <p class="text-sm mb-0 text-capitalize text-white">Paid Claims</p>
+                  <p class="text-sm mb-0 text-capitalize text-white">Paid Services</p>
                   <h4 class="mb-0 text-white">2,300</h4>
                 </div>
               </div>
@@ -58,7 +58,7 @@
                   <i class="material-icons opacity-10">pending</i>
                 </div>
                 <div class="text-end pt-1">
-                  <p class=" mb-0 text-capitalize text-white text-lg">Pending Claims</p>
+                  <p class=" mb-0 text-capitalize text-white text-lg">Pending Transactions</p>
                   <h4 class="mb-0 text-white">3,462</h4>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                   <i class="material-icons opacity-10">weekend</i>
                 </div>
                 <div class="text-end pt-1">
-                  <p class="text-lg mb-0 text-capitalize text-white">Declined Claims</p>
+                  <p class="text-lg mb-0 text-capitalize text-white">Declined Payments</p>
                   <h4 class="mb-0 text-white">430</h4>
                 </div>
               </div>
@@ -96,7 +96,7 @@
             <div class="card-body">
               <div class="widget widget-chart-two">
                   <div class="widget-heading">
-                      <h5 class="text-white">Claims</h5>
+                      <h5 class="text-white">Transactions</h5>
                   </div>
                   <div class="widget-content">
                       <div id="chart-2" class="text-white" ></div>
@@ -113,7 +113,7 @@
                   <h6 class="text-white">Recent Transactions</h6>
                   <p class="text-sm mb-0">
                     <i class="fa fa-check text-info text-white" aria-hidden="true"></i>
-                    <span class="font-weight-bold ms-1">30 paid claims</span> this month
+                    <span class="font-weight-bold ms-1">30 paid services</span> this month
                   </p>
                 </div>
 
