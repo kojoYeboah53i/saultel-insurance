@@ -23,30 +23,24 @@
           <div class="col-12 default-color-dark">
               <div class="card mb-4 default-color-dark text-white">
                 <div class="card-header pb-0 default-color-dark">
-                  <h6>Inventory List</h6>
+                  <h6 class="text-white font-bold">Inventory List</h6>
                 </div>
-            <div class="flex justify-between items-center mx-auto p-2">
-              <div>
-                <div class="card-header pb-0" style="visibility: hidden">
-                  <h6>Inventory List</h6>
+                <div class="flex justify-end">
+                  <a class="card-header pb-0 default-color-dark" href="{{ route('inventory.addItem') }}">
+                    <span class="btn btn-outline-warning">add new item</span>
+                  </a>
                 </div>
-              </div>
-              <div>
-                <a class="card-header pb-0" href="{{ route('inventory.addItem') }}">
-                  <span class="btn btn-outline-warning">add new item</span>
-                </a>
-              </div>
-
-        </div>
+      </div>
         <div class="card-body px-0 pt-0 pb-2 default-color-dark text-white">
           <div class="table-responsive p-0">
             <table class="table align-items-center mb-0">
               <thead>
                 <tr>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-lg text-white font-bold">Service </th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 text-lg text-white font-bold">Description</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-lg text-white font-bold">Price</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7text-lg  text-white font-bold">Action</th>
                   <th class="text-secondary opacity-7"></th>
                 </tr>
               </thead>
@@ -54,12 +48,9 @@
                 <tr>
                   <td>
                     <div class="d-flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                      </div>
+                 
                       <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">John Michael</h6>
-                        <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                        <p class=" text-secondary mb-0 text-white">Oil Change</p>
                       </div>
                     </div>
                   </td>
